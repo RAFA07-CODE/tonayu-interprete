@@ -1,0 +1,125 @@
+# ==================== TOKENS Y LEXER ====================
+TOKENS_NAHUATL = {
+    # Alfabeto (IDs 1-22)
+    'a': {'nahuatl': 'ātl (agua)', 'id': 1, 'tipo': 'Letra'},
+    'b': {'nahuatl': 'be (adaptado)', 'id': 2, 'tipo': 'Letra'},
+    'ch': {'nahuatl': 'chīchīltik (rojo brillante)', 'id': 3, 'tipo': 'Letra'},
+    'e': {'nahuatl': 'ēhecatl (viento)', 'id': 4, 'tipo': 'Letra'},
+    'i': {'nahuatl': 'īztli (obsidiana)', 'id': 5, 'tipo': 'Letra'},
+    'j': {'nahuatl': 'xōchitl (flor)', 'id': 6, 'tipo': 'Letra'},
+    'k': {'nahuatl': 'kalli (casa)', 'id': 7, 'tipo': 'Letra'},
+    'l': {'nahuatl': 'lolli (rodar)', 'id': 8, 'tipo': 'Letra'},
+    'm': {'nahuatl': 'metl (maguey)', 'id': 9, 'tipo': 'Letra'},
+    'n': {'nahuatl': 'nāhui (cuatro)', 'id': 10, 'tipo': 'Letra'},
+    'o': {'nahuatl': 'ōlli (hule)', 'id': 11, 'tipo': 'Letra'},
+    'p': {'nahuatl': 'pilli (noble)', 'id': 12, 'tipo': 'Letra'},
+    'q': {'nahuatl': 'quema (sí)', 'id': 13, 'tipo': 'Letra'},
+    'r': {'nahuatl': 'tepetl (cerro)', 'id': 14, 'tipo': 'Letra'},
+    's': {'nahuatl': 'cuīcatl (canto)', 'id': 15, 'tipo': 'Letra'},
+    't': {'nahuatl': 'tlācatl (persona)', 'id': 16, 'tipo': 'Letra'},
+    'u': {'nahuatl': 'uh (adaptado)', 'id': 17, 'tipo': 'Letra'},
+    'w': {'nahuatl': 'huēyi (grande)', 'id': 18, 'tipo': 'Letra'},
+    'x': {'nahuatl': 'xīcotl (avispa)', 'id': 19, 'tipo': 'Letra'},
+    'y': {'nahuatl': 'yōllotl (corazón)', 'id': 20, 'tipo': 'Letra'},
+    'z': {'nahuatl': 'zacatl (pasto)', 'id': 21, 'tipo': 'Letra'},
+    "'": {'nahuatl': 'corte glotal', 'id': 22, 'tipo': 'Delimitador'},
+
+    # Operadores (IDs 100-111)
+    '+': {'nahuatl': 'tlen mochīhua (suma)', 'id': 100, 'tipo': 'Operador'},
+    '-': {'nahuatl': 'tlāzotl (resta)', 'id': 101, 'tipo': 'Operador'},
+    '*': {'nahuatl': 'chīchīltik yāotl (multiplicación)', 'id': 102, 'tipo': 'Operador'},
+    '/': {'nahuatl': 'nextepōllotl (división)', 'id': 103, 'tipo': 'Operador'},
+    '%': {'nahuatl': 'centēchīuh (módulo)', 'id': 104, 'tipo': 'Operador'},
+    '=': {'nahuatl': 'tlen tlatskanī (asignación)', 'id': 105, 'tipo': 'Operador'},
+    '==': {'nahuatl': 'tlatskanī tōkāitl (igualdad)', 'id': 106, 'tipo': 'Operador'},
+    '!=': {'nahuatl': 'amochīhuanī (desigualdad)', 'id': 107, 'tipo': 'Operador'},
+    '<': {'nahuatl': 'tepōztli ichan (menor que)', 'id': 108, 'tipo': 'Operador'},
+    '>': {'nahuatl': 'tepōztli īhuān (mayor que)', 'id': 109, 'tipo': 'Operador'},
+    '<=': {'nahuatl': 'tepōztli ichan o igual', 'id': 110, 'tipo': 'Operador'},
+    '>=': {'nahuatl': 'tepōztli īhuān o igual', 'id': 111, 'tipo': 'Operador'},
+
+    # Palabras reservadas (IDs 300-312)
+    'chaj': {'nahuatl': 'declarar variable', 'id': 300, 'tipo': 'Keyword'},
+    'qex': {'nahuatl': 'imprimir', 'id': 301, 'tipo': 'Keyword'},
+    'toj': {'nahuatl': 'condicional (if)', 'id': 302, 'tipo': 'Keyword'},
+    'muk': {'nahuatl': 'bucle (while/for)', 'id': 303, 'tipo': 'Keyword'},
+    "b'ah": {'nahuatl': 'inicio de bloque', 'id': 304, 'tipo': 'Keyword'},
+    "nik'": {'nahuatl': 'fin de bloque', 'id': 305, 'tipo': 'Keyword'},
+    "pek'": {'nahuatl': 'definir función', 'id': 306, 'tipo': 'Keyword'},
+    'chok': {'nahuatl': 'llamar función', 'id': 307, 'tipo': 'Keyword'},
+    "utz'": {'nahuatl': 'retornar valor', 'id': 308, 'tipo': 'Keyword'},
+    'naq': {'nahuatl': 'operador comparación', 'id': 309, 'tipo': 'Keyword'},
+    'ja': {'nahuatl': 'verdadero (true)', 'id': 310, 'tipo': 'Literal'},
+    'ma': {'nahuatl': 'falso (false)', 'id': 311, 'tipo': 'Literal'},
+    'ahmo': {'nahuatl': 'nulo (None)', 'id': 312, 'tipo': 'Literal'},
+
+    # Tipos de datos (IDs 400-405)
+    'loq': {'nahuatl': 'cadena (string)', 'id': 400, 'tipo': 'Type'},
+    'matlaktli': {'nahuatl': 'entero (int)', 'id': 401, 'tipo': 'Type'},
+    'ompa': {'nahuatl': 'decimal (float)', 'id': 402, 'tipo': 'Type'},
+    'tlāzi': {'nahuatl': 'tupla (tuple)', 'id': 403, 'tipo': 'Type'},
+    'tlāltikpak': {'nahuatl': 'conjunto (set)', 'id': 404, 'tipo': 'Type'},
+    'cuixcoatli': {'nahuatl': 'diccionario (dict)', 'id': 405, 'tipo': 'Type'}
+}
+
+PATTERNS = [
+    # Comentarios (se ignoran)
+    (r'#.*', None),
+    (r"'''.*?'''", None, re.DOTALL),
+    
+    # Palabras reservadas
+    (r'\bchaj\b', {'tipo': 'DECLARACION', 'id': 300}),
+    (r'\bqex\b', {'tipo': 'IMPRIMIR', 'id': 301}),
+    (r'\btoj\b', {'tipo': 'CONDICIONAL', 'id': 302}),
+    (r'\bmuk\b', {'tipo': 'BUCLE', 'id': 303}),
+    (r"\bb'ah\b", {'tipo': 'INICIO_BLOQUE', 'id': 304}),
+    (r"\bnik'\b", {'tipo': 'FIN_BLOQUE', 'id': 305}),
+    (r"\bpek'\b", {'tipo': 'DEF_FUNCION', 'id': 306}),
+    (r'\bchok\b', {'tipo': 'LLAMADA_FUNCION', 'id': 307}),
+    (r"\butz'\b", {'tipo': 'RETORNO', 'id': 308}),
+    (r'\bnaq\b', {'tipo': 'COMPARACION', 'id': 309}),
+    (r'\bja\b', {'tipo': 'VERDADERO', 'id': 310}),
+    (r'\bma\b', {'tipo': 'FALSO', 'id': 311}),
+    (r'\bahmo\b', {'tipo': 'NONE', 'id': 312}),
+    
+    # Tipos de datos
+    (r'\bloq\b', {'tipo': 'TIPO_CADENA', 'id': 400}),
+    (r'\bmatlaktli\b', {'tipo': 'TIPO_ENTERO', 'id': 401}),
+    (r'\bompa\b', {'tipo': 'TIPO_DECIMAL', 'id': 402}),
+    (r'\btlāzi\b', {'tipo': 'TIPO_TUPLA', 'id': 403}),
+    (r'\btlāltikpak\b', {'tipo': 'TIPO_CONJUNTO', 'id': 404}),
+    (r'\bcuixcoatli\b', {'tipo': 'TIPO_DICCIONARIO', 'id': 405}),
+    
+    # Literales
+    (r'\b\d+\.?\d*\b', {'tipo': 'NUMERO', 'id': 500}),  # Números
+    (r'"[^"]*"', {'tipo': 'CADENA', 'id': 501}),  # Cadenas
+    
+    # Operadores y delimitadores
+    (r'==', {'tipo': 'IGUAL_QUE', 'id': 106}),
+    (r'!=', {'tipo': 'DIFERENTE_QUE', 'id': 107}),
+    (r'<=', {'tipo': 'MENOR_IGUAL_QUE', 'id': 110}),
+    (r'>=', {'tipo': 'MAYOR_IGUAL_QUE', 'id': 111}),
+    (r'\+', {'tipo': 'SUMA', 'id': 100}),
+    (r'-', {'tipo': 'RESTA', 'id': 101}),
+    (r'\*', {'tipo': 'MULTIPLICACION', 'id': 102}),
+    (r'/', {'tipo': 'DIVISION', 'id': 103}),
+    (r'%', {'tipo': 'MODULO', 'id': 104}),
+    (r'=', {'tipo': 'ASIGNACION', 'id': 105}),
+    (r'<', {'tipo': 'MENOR_QUE', 'id': 108}),
+    (r'>', {'tipo': 'MAYOR_QUE', 'id': 109}),
+    (r'\(', {'tipo': 'PARENTESIS_IZQ', 'id': 200}),
+    (r'\)', {'tipo': 'PARENTESIS_DER', 'id': 201}),
+    (r'\{', {'tipo': 'LLAVE_IZQ', 'id': 202}),
+    (r'\}', {'tipo': 'LLAVE_DER', 'id': 203}),
+    (r'\[', {'tipo': 'CORCHETE_IZQ', 'id': 204}),
+    (r'\]', {'tipo': 'CORCHETE_DER', 'id': 205}),
+    (r',', {'tipo': 'COMA', 'id': 206}),
+    (r';', {'tipo': 'PUNTO_COMA', 'id': 207}),
+    (r':', {'tipo': 'DOS_PUNTOS', 'id': 208}),
+    
+    # Identificadores (debe ir al final)
+    (r'\b[a-z][a-z0-9\']*\b', {'tipo': 'IDENTIFICADOR', 'id': 700}),
+    
+    # Espacios (se ignoran)
+    (r'\s+', None)
+]

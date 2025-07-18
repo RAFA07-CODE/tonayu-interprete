@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tonayu | Intérprete Web</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto&display=swap"
+    rel="stylesheet" />
+</head>
+
+<!-- Estilos adicionales -->
+<style>
+  /* Modal base */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 77, 64, 0.8);
+    /* Color con #004d40 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  /* Contenedor del contenido */
+  .modal-contenido {
+    background: #ffffff;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 24px 32px;
+    width: 92%;
+    max-width: 960px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    position: relative;
+    font-family: 'Segoe UI', 'Poppins', sans-serif;
+    color: #212121;
+  }
+
+  /* Cierre (X) */
+  .cerrar {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #004d40;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .cerrar:hover {
+    color: #d32f2f;
+  }
+
+  /* Títulos */
+  .modal-contenido h2,
+  .modal-contenido h3 {
+    color: #004d40;
+    margin-top: 24px;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 6px;
+  }
+
+  /* Tabla */
+  .modal-contenido table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+
+  .modal-contenido table th,
+  .modal-contenido table td {
+    border: 1px solid #b0bec5;
+    padding: 10px 12px;
+    text-align: left;
+  }
+
+  .modal-contenido table th {
+    background-color: #004d40;
+    color: white;
+  }
+
+  .modal-contenido table tr:nth-child(even) {
+    background-color: #e0f2f1;
+  }
+
+  .modal-contenido table tr:hover {
+    background-color: #b2dfdb;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .modal-contenido {
+      padding: 16px;
+      width: 96%;
+    }
+
+    .modal-contenido table {
+      font-size: 14px;
+    }
+
+    .cerrar {
+      top: 12px;
+      right: 16px;
+      font-size: 24px;
+    }
+  }
+</style>
+
+<body>
+  <header>
+    <div class="header-left">
+      <img src="sol.png" alt="Logo Tonayu" id="logo">
+      <div class="header-texto">
+        <h1 data-es="Tonayu: Intérprete Web" data-nah="Tonayu: Tlahtolpehpenalistli">Tonayu: Intérprete Web</h1>
+        <p data-es="Lenguaje ritual inspirado en el náhuatl. Claro. Funcional. Simbólico."
+          data-nah="Tlahtolli tlamanilistli ipan náhuatl. Tlatzintlan. Tlachihualiz. Tlamachiliz.">
+          Lenguaje ritual inspirado en el náhuatl. Claro. Funcional. Simbólico.
+        </p>
+      </div>
+    </div>
+
+    <div class="header-controls">
+      <select id="language-selector">
+        <option value="es" selected>Español</option>
+        <option value="nah">Náhuatl</option>
+      </select>
+      <button id="ejemplos-btn">📚 Ejemplos</button>
+      <button id="btnDiccionario">📘 Diccionario Tonayu</button>
+      <button id="manual-btn">🛠 Manual</button>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="example-selector" id="example-selector" style="display: none;">
+      <label for="example-list">Selecciona un ejemplo:</label>
+      <select id="example-list">
+        <option value="0">-- Elige una opción --</option>
+        <optgroup label="1. Variables y Aritmética">
+          <option value="ej1">Declaración y operaciones</option>
+        </optgroup>
+        <optgroup label="2. Funciones y llamadas">
+          <option value="ej2">Función sumar</option>
+          <option value="ej3">Función saludar</option>
+          <option value="ej4">Función con retorno</option>
+        </optgroup>
+        <optgroup label="3. Condicionales">
+          <option value="ej5">Condicional simple</option>
+          <option value="ej6">Condicional con else</option>
+        </optgroup>
+        <optgroup label="4. Ciclos">
+          <option value="ej7">Ciclo while (muk)</option>
+        </optgroup>
+        <optgroup label="5. Lógica y Comparaciones">
+          <option value="ej8">Comparaciones booleanas</option>
+        </optgroup>
+        <optgroup label="6. Anidación">
+          <option value="ej9">Estructuras anidadas</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="flex-row">
+      <div class="editor-container">
+        <h1 class="editor-title" data-es="Código fuente" data-nah="Tlahtoltecpantiliztli">Código fuente</h1>
+        <form id="form">
+          <div class="code-editor">
+            <div class="line-numbers"></div>
+            <textarea id="codigo" name="codigo" spellcheck="false" autocomplete="off"></textarea>
+          </div>
+          <div class="controls">
+            <button type="submit" id="ejecutar-btn" data-es="▶ Ejecutar" data-nah="▶ Tictlaliz">▶ Ejecutar</button>
+            <label class="auto-run-label">
+              <input type="checkbox" id="auto-ejecutar" checked />
+              <span data-es="Auto-ejecutar" data-nah="Tlahtlaliz ahtle tictlatlania">Auto-ejecutar</span>
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="salida-general">
+        <div class="console-container">
+          <div class="console-header">
+            <span class="console-title" data-es="📤 Salida General" data-nah="📤 Tlalpanaliztli">📤 Salida
+              General</span>
+            <span class="console-status success" id="console-status" data-es="Listo" data-nah="Tlami">Listo</span>
+          </div>
+          <div class="console-output" id="resultado">
+            <div class="no-output" data-es="— Ejecuta el código para ver los resultados —"
+              data-nah="— Xictlali tlahtolpehpenalistli iccampa tiquittaz —">— Ejecuta el código para ver los resultados
+              —</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal oculto por defecto -->
+    <div id="diccionarioModal" class="modal" style="display: none;">
+      <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <h2>Diccionario Tonayu</h2>
+
+        <h3>Alfabeto y Caracteres Individuales</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Token</th>
+              <th>Tipo</th>
+              <th>Significado Náhuatl</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>a</td>
+              <td>Letra</td>
+              <td>ātl (agua)</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>b</td>
+              <td>Letra</td>
+              <td>be (adaptado)</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>ch</td>
+              <td>Letra</td>
+              <td>chīchīltik (rojo brillante)</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>e</td>
+              <td>Letra</td>
+              <td>ēhecatl (viento)</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>i</td>
+              <td>Letra</td>
+              <td>īztli (obsidiana)</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>j</td>
+              <td>Letra</td>
+              <td>xōchitl (flor)</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>k</td>
+              <td>Letra</td>
+              <td>kalli (casa)</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>l</td>
+              <td>Letra</td>
+              <td>lolli (rodar)</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>m</td>
+              <td>Letra</td>
+              <td>metl (maguey)</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>n</td>
+              <td>Letra</td>
+              <td>nāhui (cuatro)</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>o</td>
+              <td>Letra</td>
+              <td>ōlli (hule)</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>p</td>
+              <td>Letra</td>
+              <td>pilli (noble)</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>q</td>
+              <td>Letra</td>
+              <td>quema (sí)</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>r</td>
+              <td>Letra</td>
+              <td>tepetl (cerro)</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>s</td>
+              <td>Letra</td>
+              <td>cuīcatl (canto)</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>t</td>
+              <td>Letra</td>
+              <td>tlācatl (persona)</td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>u</td>
+              <td>Letra</td>
+              <td>uh (adaptado)</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>w</td>
+              <td>Letra</td>
+              <td>huēyi (grande)</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>x</td>
+              <td>Letra</td>
+              <td>xīcotl (avispa)</td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>y</td>
+              <td>Letra</td>
+              <td>yōllotl (corazón)</td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>z</td>
+              <td>Letra</td>
+              <td>zacatl (pasto)</td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>'</td>
+              <td>Delimitador</td>
+              <td>corte glotal</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Símbolos y Operadores</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Token</th>
+              <th>Tipo</th>
+              <th>Significado Náhuatl</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>100</td>
+              <td>+</td>
+              <td>Operador</td>
+              <td>tlen mochīhua (suma)</td>
+            </tr>
+            <tr>
+              <td>101</td>
+              <td>-</td>
+              <td>Operador</td>
+              <td>tlāzotl (resta)</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>*</td>
+              <td>Operador</td>
+              <td>chīchīltik yāotl (multiplicación)</td>
+            </tr>
+            <tr>
+              <td>103</td>
+              <td>/</td>
+              <td>Operador</td>
+              <td>nextepōllotl (división)</td>
+            </tr>
+            <tr>
+              <td>104</td>
+              <td>%</td>
+              <td>Operador</td>
+              <td>centēchīuh (módulo)</td>
+            </tr>
+            <tr>
+              <td>105</td>
+              <td>=</td>
+              <td>Operador</td>
+              <td>tlen tlatskanī (asignación)</td>
+            </tr>
+            <tr>
+              <td>106</td>
+              <td>==</td>
+              <td>Operador</td>
+              <td>tlatskanī tōkāitl (igualdad)</td>
+            </tr>
+            <tr>
+              <td>107</td>
+              <td>!=</td>
+              <td>Operador</td>
+              <td>amochīhuanī (desigualdad)</td>
+            </tr>
+            <tr>
+              <td>108</td>
+              <td>
+                << /td>
+              <td>Operador</td>
+              <td>tepōztli ichan (menor que)</td>
+            </tr>
+            <tr>
+              <td>109</td>
+              <td>></td>
+              <td>Operador</td>
+              <td>tepōztli īhuān (mayor que)</td>
+            </tr>
+            <tr>
+              <td>110</td>
+              <td>
+                <=< /td>
+              <td>Operador</td>
+              <td>tepōztli ichan o igual</td>
+            </tr>
+            <tr>
+              <td>111</td>
+              <td>>=</td>
+              <td>Operador</td>
+              <td>tepōztli īhuān o igual</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Delimitadores</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Token</th>
+              <th>Tipo</th>
+              <th>Significado Náhuatl</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>200</td>
+              <td>(</td>
+              <td>Delimitador</td>
+              <td>nānakatl tlatskayotl (inicio)</td>
+            </tr>
+            <tr>
+              <td>201</td>
+              <td>)</td>
+              <td>Delimitador</td>
+              <td>nānakatl mopanō (fin)</td>
+            </tr>
+            <tr>
+              <td>202</td>
+              <td>{</td>
+              <td>Delimitador</td>
+              <td>cuetlāxōchitl tlatskayotl (inicio)</td>
+            </tr>
+            <tr>
+              <td>203</td>
+              <td>}</td>
+              <td>Delimitador</td>
+              <td>cuetlāxōchitl mopanō (fin)</td>
+            </tr>
+            <tr>
+              <td>204</td>
+              <td>[</td>
+              <td>Delimitador</td>
+              <td>cuapa (inicio lista)</td>
+            </tr>
+            <tr>
+              <td>205</td>
+              <td>]</td>
+              <td>Delimitador</td>
+              <td>cuapantli (fin lista)</td>
+            </tr>
+            <tr>
+              <td>206</td>
+              <td>,</td>
+              <td>Delimitador</td>
+              <td>cuītlal (separador)</td>
+            </tr>
+            <tr>
+              <td>207</td>
+              <td>;</td>
+              <td>Delimitador</td>
+              <td>tlatskayotl tlatskanī (fin línea)</td>
+            </tr>
+            <tr>
+              <td>208</td>
+              <td>:</td>
+              <td>Delimitador</td>
+              <td>tlatskayotl nechicoliztli (tipado)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Palabras Reservadas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Token</th>
+              <th>Tipo</th>
+              <th>Significado Náhuatl</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>300</td>
+              <td>chaj</td>
+              <td>Keyword</td>
+              <td>tlatskanī</td>
+            </tr>
+            <tr>
+              <td>301</td>
+              <td>qex</td>
+              <td>Keyword</td>
+              <td>tlahcuiloa</td>
+            </tr>
+            <tr>
+              <td>302</td>
+              <td>toj</td>
+              <td>Keyword</td>
+              <td>zān</td>
+            </tr>
+            <tr>
+              <td>303</td>
+              <td>muk</td>
+              <td>Keyword</td>
+              <td>nechicoliztli huehcāuh</td>
+            </tr>
+            <tr>
+              <td>304</td>
+              <td>b'ah</td>
+              <td>Keyword</td>
+              <td>calli tlatskayotl</td>
+            </tr>
+            <tr>
+              <td>305</td>
+              <td>nik</td>
+              <td>Keyword</td>
+              <td>mopanō</td>
+            </tr>
+            <tr>
+              <td>306</td>
+              <td>pek'</td>
+              <td>Keyword</td>
+              <td>tēchpoua</td>
+            </tr>
+            <tr>
+              <td>307</td>
+              <td>chok</td>
+              <td>Keyword</td>
+              <td>huīca</td>
+            </tr>
+            <tr>
+              <td>308</td>
+              <td>utz'</td>
+              <td>Keyword</td>
+              <td>tēchmaca</td>
+            </tr>
+            <tr>
+              <td>309</td>
+              <td>naq</td>
+              <td>Keyword</td>
+              <td>tlachiyalistli</td>
+            </tr>
+            <tr>
+              <td>310</td>
+              <td>ja</td>
+              <td>Literal</td>
+              <td>quēmah</td>
+            </tr>
+            <tr>
+              <td>311</td>
+              <td>ma</td>
+              <td>Literal</td>
+              <td>ahmo quēmah</td>
+            </tr>
+            <tr>
+              <td>312</td>
+              <td>ahmo</td>
+              <td>Literal</td>
+              <td>ahmo cualcān</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Tipos de Datos</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Token</th>
+              <th>Tipo</th>
+              <th>Significado Náhuatl</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>400</td>
+              <td>loq</td>
+              <td>Type</td>
+              <td>tlahtolpantli</td>
+            </tr>
+            <tr>
+              <td>401</td>
+              <td>matlaktli</td>
+              <td>Type</td>
+              <td>tēntli</td>
+            </tr>
+            <tr>
+              <td>402</td>
+              <td>ompa</td>
+              <td>Type</td>
+              <td>nechicoliztli</td>
+            </tr>
+            <tr>
+              <td>403</td>
+              <td>tlāzi</td>
+              <td>Type</td>
+              <td>caxtōlli</td>
+            </tr>
+            <tr>
+              <td>404</td>
+              <td>tlāltikpak</td>
+              <td>Type</td>
+              <td>tecpanaliztli</td>
+            </tr>
+            <tr>
+              <td>405</td>
+              <td>cuixcoatli</td>
+              <td>Type</td>
+              <td>āmoxpouhka</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <h3>Literales Numéricos</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Token</th>
+              <th>Tipo</th>
+              <th>Significado Náhuatl</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>500</td>
+              <td>0</td>
+              <td>Literal</td>
+              <td>xochitzīntli (cero)</td>
+            </tr>
+            <tr>
+              <td>501</td>
+              <td>1</td>
+              <td>Literal</td>
+              <td>ce (uno)</td>
+            </tr>
+            <tr>
+              <td>502</td>
+              <td>2</td>
+              <td>Literal</td>
+              <td>ōme (dos)</td>
+            </tr>
+            <tr>
+              <td>503</td>
+              <td>3</td>
+              <td>Literal</td>
+              <td>ēyi (tres)</td>
+            </tr>
+            <tr>
+              <td>504</td>
+              <td>4</td>
+              <td>Literal</td>
+              <td>nāhui (cuatro)</td>
+            </tr>
+            <tr>
+              <td>505</td>
+              <td>5</td>
+              <td>Literal</td>
+              <td>mācuīlli (cinco)</td>
+            </tr>
+            <tr>
+              <td>506</td>
+              <td>6</td>
+              <td>Literal</td>
+              <td>chicuēyi (seis)</td>
+            </tr>
+            <tr>
+              <td>507</td>
+              <td>7</td>
+              <td>Literal</td>
+              <td>chicōme (siete)</td>
+            </tr>
+            <tr>
+              <td>508</td>
+              <td>8</td>
+              <td>Literal</td>
+              <td>chicēyi (ocho)</td>
+            </tr>
+            <tr>
+              <td>509</td>
+              <td>9</td>
+              <td>Literal</td>
+              <td>chicnāhui (nueve)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <section class="output-container" id="reportes">
+      <div id="lexico"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p data-es="&copy; 2025 Tonayu Project — Inspirado en las lenguas originarias y el diseño moderno."
+      data-nah="&copy; 2025 Tonayu Project — Itechcopa tlahtolli tlachihualizhuan ihuan yancuic tlamachiliztli.">&copy;
+      2025 Tonayu Project — Inspirado en las lenguas originarias y el diseño moderno.</p>
+  </footer>
+
+  <script>
+    const ejemplos = {
+      ej1: `chaj x = 10;
+chaj y = 2;
+chaj z = (x + y) + 80;
+qex z;
+qex x + y;
+qex x - y;
+qex x * y;
+qex x / y;
+qex x % y;`,
+      ej2: `pek' mochihua(g, b)
+b'ah
+  utz' g + b;
+nik'
+
+chaj x = 10;
+chaj y = 5;
+qex chok mochihua(x, y);`,
+      ej3: `pek' niltoka()
+b'ah
+  qex "¡Hola!";
+nik'
+
+chok niltoka();`,
+      ej4: `pek' suma(a, b)
+b'ah
+  utz' a + b;
+nik'
+
+chaj total = chok suma(4, 5);
+qex total;`,
+      ej5: `chaj x = 10;
+toj x > 3
+b'ah
+  qex "x es mayor que 3";
+nik'`,
+      ej6: `chaj edad = 17;
+
+toj edad >= 18
+b'ah
+  qex "Eres mayor de edad";
+nik'
+amo ika
+b'ah
+  qex "Eres menor de edad";
+nik'`,
+      ej7: `chaj i = 0;
+
+muk i < 5
+b'ah
+  qex i;
+  chaj i = i + 1;
+nik'`,
+      ej8: `chaj a = 4;
+chaj b = 7;
+chaj c = a < b;
+qex c;
+
+chaj d = 10 == 10;
+qex d;
+
+chaj e = 5 > 3;
+qex e;`,
+      ej9: `pek' espar(n)
+b'ah
+  utz' n % 2 == 0;
+nik'
+
+toj chok espar(6)
+b'ah
+  qex "Es par";
+nik'`
+    };
+
+    document.getElementById('ejemplos-btn').addEventListener('click', () => {
+      const selector = document.getElementById('example-selector');
+      selector.style.display = selector.style.display === 'none' ? 'block' : 'none';
+    });
+
+    document.getElementById('example-list').addEventListener('change', e => {
+      const selected = e.target.value;
+      document.getElementById('codigo').value = ejemplos[selected] || '';
+    });
+
+    document.getElementById('manual-btn').addEventListener('click', () => {
+      window.open('manual.html', '_blank');
+    });
+  </script>
+
+
+  <script>
+    /* =====================================================
+       MANEJO DE NÚMEROS DE LÍNEA Y ENVÍO DE CÓDIGO
+       ===================================================== */
+    document.addEventListener('DOMContentLoaded', function () {
+      // Elementos DOM principales.
+      const textarea = document.getElementById('codigo');         // Área de código fuente.
+      const lineNumbers = document.querySelector('.line-numbers'); // Columna de números de línea.
+
+      /* -----------------------------------------------------
+         Función: updateLineNumbers
+         Propósito: sincronizar la cantidad de líneas que se
+         muestran en la columna lateral con el texto actual.
+      ----------------------------------------------------- */
+      function updateLineNumbers() {
+        const lineas = textarea.value.split('\n');                  // Divide por saltos de línea.
+        lineNumbers.innerHTML = lineas.map((_, i) => (i + 1) + '<br>').join(''); // Genera HTML.
+      }
+
+      // Actualiza al cargar y cada vez que el usuario escriba.
+      textarea.addEventListener('input', updateLineNumbers);
+      updateLineNumbers();
+
+      // ---------- ENVÍO MANUAL ----------
+      document.getElementById('form').addEventListener('submit', function (e) {
+        e.preventDefault();           // Evita recargar la página.
+        ejecutarCodigo(false);        // Llama a la función con modo normal.
+      });
+
+      /* =====================================================
+         🔄 MOD: AUTO-EJECUCIÓN DINÁMICA
+         ===================================================== */
+
+      /* -----------------------------------------------------
+         Función: debounce
+         Propósito: esperar un tiempo (delay) después del
+         último evento antes de ejecutar la función "fn".
+         Evita llamadas excesivas al servidor mientras el
+         usuario escribe.
+      ----------------------------------------------------- */
+      const debounce = (fn, delay = 1000) => { // 1000 ms = 1 s.
+        let temporizador;                      // Identificador del timeout.
+        return (...args) => {                  // Devuelve función wrapper.
+          clearTimeout(temporizador);          // Reinicia el conteo.
+          temporizador = setTimeout(() => fn(...args), delay); // Ejecuta tras delay.
+        };
+      };
+
+      /* -----------------------------------------------------
+         Función: ejecutarCodigoDebounce
+         Propósito: ejecutar el código de forma silenciosa
+         cuando el checkbox "Auto-ejecutar" esté marcado.
+      ----------------------------------------------------- */
+      const ejecutarCodigoDebounce = debounce(() => {
+        const autoEjecutar = document.getElementById('auto-ejecutar').checked; // Verifica checkbox.
+        if (autoEjecutar) {
+          ejecutarCodigo(true); // Llamada en modo silencioso.
+        }
+      });
+
+      // Cada vez que se escribe algo, disparar debounce.
+      textarea.addEventListener('input', ejecutarCodigoDebounce);
+
+      /* =====================================================
+         SELECTOR DE IDIOMA
+         ===================================================== */
+      const languageSelector = document.getElementById('language-selector');
+
+      languageSelector.addEventListener('change', function () {
+        const selectedLanguage = this.value;
+        updateLanguage(selectedLanguage);
+      });
+
+      function updateLanguage(lang) {
+        document.querySelectorAll('[data-es], [data-nah]').forEach(element => {
+          if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA' || element.tagName === 'SELECT') {
+            // No cambiar elementos de entrada
+            return;
+          }
+
+          const text = element.getAttribute(`data-${lang}`);
+          if (text) {
+            if (element.hasAttribute('placeholder')) {
+              element.setAttribute('placeholder', text);
+            } else {
+              element.textContent = text;
+            }
+          }
+        });
+      }
+    });
+
+    /* =====================================================
+       Función principal: ejecutarCodigo
+       Parámetros:
+         silencioso → true  = llamada automática
+                      false = llamada manual (botón)
+       ----------------------------------------------------- */
+    async function ejecutarCodigo(silencioso = false) {
+      const btn = document.getElementById('ejecutar-btn'); // Botón Ejecutar.
+      const statusElement = document.getElementById('console-status');
+
+      if (!silencioso) {                                   // Sólo en modo manual:
+        btn.disabled = true;                               // Deshabilita botón.
+        const currentLang = document.getElementById('language-selector').value;
+        btn.textContent = currentLang === 'es' ? 'Procesando…' : 'Tictlaliztli…';
+        statusElement.textContent = currentLang === 'es' ? 'Ejecutando...' : 'Tictlaliztli...';
+        statusElement.className = 'console-status warning';
+      }
+
+      try {
+        const codigo = document.getElementById('codigo').value; // Obtiene código.
+
+        // Envía petición a PHP.
+        const response = await fetch('ejecutar.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ codigo })
+        });
+
+        // Manejo de respuesta HTTP.
+        if (!response.ok) {
+          const error = await response.json().catch(() => null);
+          throw new Error(error?.detalle || `Error ${response.status}`);
+        }
+
+        // Parseo de JSON resultante.
+        const data = await response.json();
+        if (data.error) throw new Error(data.error);
+
+        mostrarResultados(data);  // Renderiza todo.
+        const currentLang = document.getElementById('language-selector').value;
+        statusElement.textContent = currentLang === 'es' ? 'Éxito' : 'Tlami';
+        statusElement.className = 'console-status success';
+
+        if (!silencioso) document.getElementById('reportes').scrollIntoView({ behavior: 'smooth' });
+
+      } catch (error) {
+        console.error('Error completo:', error);
+        const currentLang = document.getElementById('language-selector').value;
+        statusElement.textContent = currentLang === 'es' ? 'Error' : 'Ahmo tlami';
+        statusElement.className = 'console-status error';
+
+        document.getElementById('resultado').innerHTML = `
+          <div class="error-message">
+            <div class="error-icon">❌</div>
+            <div>
+              <h3>${currentLang === 'es' ? 'Error en la ejecución' : 'Ahcoltiliztli ipan tictlaliztli'}</h3>
+              <p>${escapeHtml(error.message)}</p>
+              <small class="error-detail">${currentLang === 'es' ? 'Verifica la consola para detalles técnicos' : 'Xiquitta consola iccampa tlamantli'}</small>
+            </div>
+          </div>`;
+      } finally {
+        if (!silencioso) {        // Sólo reactiva botón si era llamada manual.
+          btn.disabled = false;
+          const currentLang = document.getElementById('language-selector').value;
+          btn.textContent = currentLang === 'es' ? '▶ Ejecutar' : '▶ Tictlaliz';
+        }
+      }
+    }
+
+    /* =====================================================
+       Función: mostrarResultados
+       Propósito: pintar la salida del programa y
+                  los errores (léxicos, sintácticos, semánticos)
+       ===================================================== */
+
+    function mostrarResultados(data) {
+      const divResultado = document.getElementById('resultado');
+      let htmlSalida = '';
+      const currentLang = document.getElementById('language-selector').value;
+
+      if (data.error) {
+        htmlSalida = `
+      <div class="error-message">
+        <div class="error-icon">❌</div>
+        <div>
+          <h3>${currentLang === 'es' ? 'Error en la ejecución' : 'Ahcoltiliztli ipan tictlaliztli'}</h3>
+          <p>${escapeHtml(data.error)}</p>
+        </div>
+      </div>`;
+      } else {
+        const textoConsola = 'console_output' in data
+          ? (data.console_output || `<span class="no-output">${currentLang === 'es' ? '(sin salida)' : '(ahmo tlalpanaliztli)'}</span>`)
+          : `<span class="no-output">${currentLang === 'es' ? '(sin salida)' : '(ahmo tlalpanaliztli)'}</span>`;
+
+        htmlSalida += `
+      <div class="console-output-section">
+        <h3>💻 ${currentLang === 'es' ? 'Salida del programa' : 'Tlalpanaliztli tlen programa'}</h3>
+        <div class="output-content">${textoConsola.replace(/\n/g, '<br>')}</div>
+      </div>`;
+
+        // ✅ Agregado: Derivación del árbol sintáctico
+        if (data.derivacion) {
+          htmlSalida += `
+        <div class="derivacion-section">
+          <h3>📘 ${currentLang === 'es' ? 'Derivación del programa' : 'Tlahtolpehpenalistli tlen tlahtolli'}</h3>
+          <pre class="derivacion-block">${escapeHtml(data.derivacion)}</pre>
+        </div>`;
+        }
+
+        /* ---------- Mostrar errores (si los hay) ---------- */
+        const erroresLexicos = data.analisis?.lexico?.errores || [];
+        const erroresSintacticos = data.analisis?.sintactico?.errores || [];
+        const erroresSemanticos = data.analisis?.semantico?.errores || [];
+
+        const totalErrores = erroresLexicos.length + erroresSintacticos.length + erroresSemanticos.length;
+
+        if (totalErrores > 0) {
+          htmlSalida += `
+    <div class="error-section">
+      <h3>❌ ${currentLang === 'es'
+              ? `Errores de análisis (${totalErrores})`
+              : `Ahcoltiliztli ipan tlamachiliztli (${totalErrores})`}</h3>
+      <div class="error-list">
+        ${erroresLexicos.map(e => `
+          <div class="error-line">
+            <span class="error-icon">🟥</span>
+            <span>
+              <strong>${currentLang === 'es' ? `Línea ${e.linea}:` : `Tlapalli ${e.linea}:`}</strong>
+              [${currentLang === 'es' ? 'Léxico' : 'Tlahtoltlamachiliztli'}] ${escapeHtml(e.mensaje)}
+            </span>
+          </div>`).join('')}
+
+        ${erroresSintacticos.map(e => `
+          <div class="error-line">
+            <span class="error-icon">🟧</span>
+            <span>
+              <strong>${currentLang === 'es' ? `Línea ${e.linea}:` : `Tlapalli ${e.linea}:`}</strong>
+              [${currentLang === 'es' ? 'Sintáctico' : 'Tlahtolpehpenalistli'}] ${escapeHtml(e.mensaje)}
+            </span>
+          </div>`).join('')}
+
+        ${erroresSemanticos.map(e => `
+          <div class="error-line">
+            <span class="error-icon">🟨</span>
+            <span>
+              <strong>${currentLang === 'es' ? `Línea ${e.linea}:` : `Tlapalli ${e.linea}:`}</strong>
+              [${currentLang === 'es' ? 'Semántico' : 'Tlamachiliztli'}] ${escapeHtml(e.mensaje)}
+            </span>
+          </div>`).join('')}
+      </div>
+    </div>`;
+        } else {
+          htmlSalida += `
+    <div class="execution-status">
+      <span class="success-icon">✓</span>
+      <span>${currentLang === 'es'
+              ? 'Ejecución completada sin errores'
+              : 'Tictlaliztli tlami ahmo ahcoltiliztli'}</span>
+    </div>`;
+        }
+
+      }
+
+      divResultado.innerHTML = htmlSalida;
+
+      const divLexico = document.getElementById('lexico');
+      if (data.analisis?.lexico) {
+        const lex = data.analisis.lexico;
+        divLexico.innerHTML = `
+      <div class="analysis-section">
+        <h2 class="section-title">🔍 ${currentLang === 'es' ? 'Análisis Léxico' : 'Tlahtoltlamachiliztli'}</h2>
+        <div class="analysis-summary">
+          <p><strong>${currentLang === 'es' ? 'Total tokens:' : 'Tlapohualiztli tokens:'}</strong> ${lex.total_tokens}</p>
+          ${lex.errores.length
+            ? `<p class="error-count"><strong>${currentLang === 'es' ? 'Errores:' : 'Ahcoltiliztli:'}</strong> ${lex.errores.length}</p>`
+            : `<p class="success-message">✓ ${currentLang === 'es' ? 'Análisis correcto' : 'Tlamachiliztli tlami'}</p>`}
+        </div>
+        ${generarTablaTokens(lex.tokens)}
+        ${lex.errores.length ? generarListaErrores(lex.errores) : ''}
+      </div>`;
+      }
+
+      function escapeHtml(str) {
+        return str.replace(/[&<>"']/g, c => ({
+          '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
+        }[c]));
+      }
+
+      function generarTablaTokens(tokens) {
+        return `
+    <div class="table-container">
+      <table class="token-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Token</th>
+            <th>${currentLang === 'es' ? 'Tipo' : 'Tlamantli'}</th>
+            <th>${currentLang === 'es' ? 'Línea' : 'Tlapalli'}</th>
+            <th>${currentLang === 'es' ? 'Significado Náhuatl' : 'Tlahtolli náhuatl'}</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${tokens.map((t, i) => `
+            <tr>
+              <td>${i + 1}</td>
+              <td><code>${escapeHtml(t.token)}</code></td>
+              <td><span class="token-tag ${t.tipo ? t.tipo.toLowerCase() : ''}">${t.tipo || '—'}</span></td>              
+              <td>${t.linea || '—'}</td>
+              <td class="nahuatl">${t.nahuatl || '—'}</td>
+            </tr>`).join('')}
+        </tbody>
+      </table>
+    </div>`;
+      }
+
+      function generarListaErrores(errs) {
+        return `
+      <div class="error-details">
+        <h3>${currentLang === 'es' ? 'Detalles de errores léxicos:' : 'Tlamantli ahcoltiliztli tlahtoltlamachiliztli:'}</h3>
+        <ul class="error-list">
+          ${errs.map(e => `
+            <li>
+              <strong>${currentLang === 'es' ? `Línea ${e.linea}:` : `Tlapalli ${e.linea}:`}</strong> ${escapeHtml(e.mensaje)}
+            </li>`).join('')}
+        </ul>
+      </div>`;
+      }
+    }
+
+  </script>
+
+  <script>
+    document.getElementById("btnDiccionario").addEventListener("click", function () {
+      const diccionario = document.getElementById("diccionario");
+      diccionario.style.display = (diccionario.style.display === "none") ? "block" : "none";
+    });
+  </script>
+
+
+  <script>
+    document.getElementById("btnDiccionario").onclick = function () {
+      document.getElementById("diccionarioModal").style.display = "flex";
+    };
+
+    function cerrarModal() {
+      document.getElementById("diccionarioModal").style.display = "none";
+    }
+
+    // Cierra el modal si hacen clic fuera del contenido
+    window.onclick = function (event) {
+      const modal = document.getElementById("diccionarioModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
+
+  <script>
+    document.getElementById('language-selector').addEventListener('change', function () {
+      const idioma = this.value;
+
+      // Botones
+      document.getElementById('ejemplos-btn').innerText = idioma === 'es' ? '📚 Ejemplos' : '📚 Tēixmatkē';
+      document.getElementById('btnDiccionario').innerText = idioma === 'es' ? '📘 Diccionario Tonayu' : '📘 Tlahtōltla Tonayu';
+      document.getElementById('manual-btn').innerText = idioma === 'es' ? '🛠 Manual' : '🛠 Tequipan';
+
+      // Etiqueta del selector
+      document.querySelector('label[for="example-list"]').innerText = idioma === 'es'
+        ? 'Selecciona un ejemplo:'
+        : 'Ma huelic in tēixmatkē:';
+
+      // Opciones del selector de ejemplos
+      const selector = document.getElementById('example-list');
+      selector.innerHTML = idioma === 'es'
+        ? `
+      <option value="0">-- Elige una opción --</option>
+      <optgroup label="1. Variables y Aritmética">
+        <option value="ej1">Declaración y operaciones</option>
+      </optgroup>
+      <optgroup label="2. Funciones y llamadas">
+        <option value="ej2">Función sumar</option>
+        <option value="ej3">Función saludar</option>
+        <option value="ej4">Función con retorno</option>
+      </optgroup>
+      <optgroup label="3. Condicionales">
+        <option value="ej5">Condicional simple</option>
+        <option value="ej6">Condicional con else</option>
+      </optgroup>
+      <optgroup label="4. Ciclos">
+        <option value="ej7">Ciclo while (muk)</option>
+      </optgroup>
+      <optgroup label="5. Lógica y Comparaciones">
+        <option value="ej8">Comparaciones booleanas</option>
+      </optgroup>
+      <optgroup label="6. Anidación">
+        <option value="ej9">Estructuras anidadas</option>
+      </optgroup>
+    `
+        : `
+      <option value="0">-- Ma huelic --</option>
+      <optgroup label="1. Tlāzohkamati īpan Variable ihuan Tlanēxtli">
+        <option value="ej1">Tlatskanī ihuan Tlāzohkamati</option>
+      </optgroup>
+      <optgroup label="2. Tlahtōltin pek’ ihuan chok">
+        <option value="ej2">Tlahtōl pek’ nemi tlen mochihua</option>
+        <option value="ej3">Tlahtōl pek’ nemi tlen niltokā</option>
+        <option value="ej4">Tlahtōl pek’ kualli utz’</option>
+      </optgroup>
+      <optgroup label="3. Toj tlen tlatskanī">
+        <option value="ej5">Toj tlatskanī kualli</option>
+        <option value="ej6">Toj ihuan amo ika (else)</option>
+      </optgroup>
+      <optgroup label="4. Mēxiptla (Ciclos)">
+        <option value="ej7">muk (bucle while/for)</option>
+      </optgroup>
+      <optgroup label="5. Nelli tlahtōltin">
+        <option value="ej8">Tlanēxtli booleano</option>
+      </optgroup>
+      <optgroup label="6. Tlahtōlli chīchīltik">
+        <option value="ej9">Anidación</option>
+      </optgroup>
+    `;
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>

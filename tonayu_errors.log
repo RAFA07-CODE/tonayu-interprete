@@ -1,0 +1,2519 @@
+
+[2025-07-07 07:02:39] Nueva ejecución
+Código recibido (primeros 200 chars): '''
+# Programa de prueba
+chaj ajk = 5
+toj ajk naq 3 b'ah
+    qex "mayor"
+nik'
+'''
+Ejecutando comando: python ^"C:^\xampp^\htdocs^\compilador/interpreter.py^" ^"C:^\Users^\RAFA VILLEGAS^\AppData^\Local^\Temp^\ton2B96.tmp^" 2^>^&1
+ERROR: El intérprete no devolvió ninguna salida. Verifica: 1) Permisos, 2) Errores en Python, 3) Sintaxis del código
+#0 {main}Fin de ejecución
+
+[2025-07-07 07:05:19] Nueva ejecución
+Ejecutando comando: "python" ""C:\xampp\htdocs\compilador/interpreter.py"" ""C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton9BBC.tmp"" 2>&1
+ERROR: Salida no es JSON válido. Error: Syntax error
+Salida cruda: Traceback (most recent call last):
+  File "C:\xampp\htdocs\compilador/interpreter.py", line 75, in <module>
+    (r"'''.*?'''", None, re.DOTALL),
+                         ^^
+NameError: name 're' is not defined. Did you forget to import 're'?
+
+#0 {main}Fin de ejecución
+
+[2025-07-07 07:07:39] Nueva ejecución
+Ejecutando comando: "python" ""C:\xampp\htdocs\compilador/interpreter.py"" ""C:\Users\RAFA VILLEGAS\AppData\Local\Temp\tonBD74.tmp"" 2>&1
+ERROR: Salida no es JSON válido. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+Salida cruda: {
+  "error": "Error cr�tico en el int�rprete",
+  "mensaje": "too many values to unpack (expected 2)",
+  "tipo": "ValueError",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\xampp\\htdocs\\compilador/interpreter.py\", line 431, in main\n    tokens, errores_lexico = analisis_lexico(codigo)\n                             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\xampp\\htdocs\\compilador/interpreter.py\", line 147, in analisis_lexico\n    for pattern, token_info in PATTERNS:\n        ^
+#0 {main}Fin de ejecución
+
+[2025-07-07 07:09:59] Nueva ejecución
+Ejecutando comando: "python" ""C:\xampp\htdocs\compilador/interpreter.py"" ""C:\Users\RAFA VILLEGAS\AppData\Local\Temp\tonE324.tmp"" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:10:06] Nueva ejecución
+Ejecutando comando: "python" ""C:\xampp\htdocs\compilador/interpreter.py"" ""C:\Users\RAFA VILLEGAS\AppData\Local\Temp\tonFB22.tmp"" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:12:11] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\tonE407.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:12:13] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\tonEB7A.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:12:13] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\tonECC3.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:20:27] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton77CC.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:20:38] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\tonA238.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:20:43] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\tonB6BB.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:21:22] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton4EE5.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:21:23] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton52FD.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:21:24] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton56A8.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:21:25] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton5968.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:21:25] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton5A82.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:21:26] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton5C19.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:21:30] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton6CA5.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:23:32] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton4ACC.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:23:45] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton7CDA.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 07:46:15] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton1967.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:02:16] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\tonE05E.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:02:54] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton7481.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:03:16] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\tonC6F8.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:04:59] Nueva ejecución
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\Users\RAFA VILLEGAS\AppData\Local\Temp\ton5B64.tmp" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:15:28] Nueva ejecución
+Archivo temporal creado: C:\xampp\htdocs\compilador/tmp/tonayu_1751868928_8e18ce12.ton
+Contenido del archivo:
+'''
+# Programa de prueba
+chaj ajk = 5
+toj ajk naq 3 b'ah
+    qex "mayor"
+nik'
+'''
+[...]
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador/tmp/tonayu_1751868928_8e18ce12.ton" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:15:59] Nueva ejecución
+Archivo temporal creado: C:\xampp\htdocs\compilador/tmp/tonayu_1751868959_53f079fa.ton
+Contenido del archivo:
+'''
+# Programa de prueba
+chaj ajk = 5
+toj ajk naq 3 b'ah
+    qex "mayor"
+nik'
+'''
+[...]
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador/tmp/tonayu_1751868959_53f079fa.ton" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:16:14] Nueva ejecución
+Archivo temporal creado: C:\xampp\htdocs\compilador/tmp/tonayu_1751868974_7526f864.ton
+Contenido del archivo:
+'''
+# Programa de prueba
+chaj ajk = 5
+toj ajk naq 3 b'ah
+    qex "mayor"
+nik'
+'''
+[...]
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador/tmp/tonayu_1751868974_7526f864.ton" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:16:15] Nueva ejecución
+Archivo temporal creado: C:\xampp\htdocs\compilador/tmp/tonayu_1751868975_1e1f1008.ton
+Contenido del archivo:
+'''
+# Programa de prueba
+chaj ajk = 5
+toj ajk naq 3 b'ah
+    qex "mayor"
+nik'
+'''
+[...]
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador/tmp/tonayu_1751868975_1e1f1008.ton" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:16:15] Nueva ejecución
+Archivo temporal creado: C:\xampp\htdocs\compilador/tmp/tonayu_1751868975_acf2755f.ton
+Contenido del archivo:
+'''
+# Programa de prueba
+chaj ajk = 5
+toj ajk naq 3 b'ah
+    qex "mayor"
+nik'
+'''
+[...]
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador/tmp/tonayu_1751868975_acf2755f.ton" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:16:15] Nueva ejecución
+Archivo temporal creado: C:\xampp\htdocs\compilador/tmp/tonayu_1751868975_88757e79.ton
+Contenido del archivo:
+'''
+# Programa de prueba
+chaj ajk = 5
+toj ajk naq 3 b'ah
+    qex "mayor"
+nik'
+'''
+[...]
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador/tmp/tonayu_1751868975_88757e79.ton" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:16:20] Nueva ejecución
+Archivo temporal creado: C:\xampp\htdocs\compilador/tmp/tonayu_1751868980_b5ac93e8.ton
+Contenido del archivo:
+'''
+# Programa de prueba
+chaj ajk = 5
+toj ajk naq 3 b'ah
+    qex "mayor"
+nik'
+'''
+[...]
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador/tmp/tonayu_1751868980_b5ac93e8.ton" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:17:09] Nueva ejecución
+Archivo temporal creado: C:\xampp\htdocs\compilador/tmp/tonayu_1751869029_190a0a42.ton
+Contenido del archivo:
+'''
+# Programa de prueba
+chaj ajk = 5
+toj ajk naq 3 b'ah
+    qex "mayor"
+nik'
+'''
+[...]
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador/tmp/tonayu_1751869029_190a0a42.ton" 2>&1
+Fin de ejecución
+
+[2025-07-07 08:21:15] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1751869275_51139a42.ton
+Tamaño: 81 bytes
+Contenido (inicio):
+'''
+# Programa de prueba
+chaj ajk = 5
+toj ajk naq 3 b'ah
+    qex "mayor"
+nik'
+'''
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1751869275_51139a42.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1751869275_51139a42.ton
+Fin de ejecución
+
+[2025-07-07 08:21:21] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1751869281_3c67dcd7.ton
+Tamaño: 81 bytes
+Contenido (inicio):
+'''
+# Programa de prueba
+chaj ajk = 5
+toj ajk naq 3 b'ah
+    qex "mayor"
+nik'
+'''
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1751869281_3c67dcd7.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1751869281_3c67dcd7.ton
+Fin de ejecución
+
+[2025-07-07 08:22:18] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1751869338_687cce41.ton
+Tamaño: 81 bytes
+Contenido (inicio):
+'''
+# Programa de prueba
+chaj ajk = 5
+toj ajk naq 3 b'ah
+    qex "mayor"
+nik'
+'''
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1751869338_687cce41.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1751869338_687cce41.ton
+Fin de ejecución
+
+[2025-07-09 01:04:31] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752015871_661c0868.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752015871_661c0868.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752015871_661c0868.ton
+Fin de ejecución
+
+[2025-07-09 01:04:35] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752015875_c3151a05.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752015875_c3151a05.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752015875_c3151a05.ton
+Fin de ejecución
+
+[2025-07-09 16:20:40] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752070840_af30f7a4.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752070840_af30f7a4.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752070840_af30f7a4.ton
+Fin de ejecución
+
+[2025-07-09 16:50:06] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752072606_f26da5d1.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752072606_f26da5d1.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752072606_f26da5d1.ton
+Fin de ejecución
+
+[2025-07-09 16:53:06] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752072786_ac657238.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752072786_ac657238.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752072786_ac657238.ton
+Fin de ejecución
+
+[2025-07-09 16:53:08] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752072788_073a6de5.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752072788_073a6de5.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752072788_073a6de5.ton
+Fin de ejecución
+
+[2025-07-09 16:53:09] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752072789_8b833346.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752072789_8b833346.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752072789_8b833346.ton
+Fin de ejecución
+
+[2025-07-09 16:58:11] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073091_ce82f7e0.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073091_ce82f7e0.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073091_ce82f7e0.ton
+Fin de ejecución
+
+[2025-07-09 16:58:15] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073095_f5f4c832.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073095_f5f4c832.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073095_f5f4c832.ton
+Fin de ejecución
+
+[2025-07-09 16:58:16] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073096_99790598.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073096_99790598.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073096_99790598.ton
+Fin de ejecución
+
+[2025-07-09 16:58:16] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073096_22a6cee8.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073096_22a6cee8.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073096_22a6cee8.ton
+Fin de ejecución
+
+[2025-07-09 16:58:16] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073096_c6c8fccb.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073096_c6c8fccb.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073096_c6c8fccb.ton
+Fin de ejecución
+
+[2025-07-09 16:58:17] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073097_d376672e.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073097_d376672e.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073097_d376672e.ton
+Fin de ejecución
+
+[2025-07-09 16:58:17] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073097_cbe4f3db.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073097_cbe4f3db.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073097_cbe4f3db.ton
+Fin de ejecución
+
+[2025-07-09 16:58:18] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073098_2ab08f37.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073098_2ab08f37.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073098_2ab08f37.ton
+Fin de ejecución
+
+[2025-07-09 16:58:18] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073098_aa64476f.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073098_aa64476f.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073098_aa64476f.ton
+Fin de ejecución
+
+[2025-07-09 16:58:45] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073125_1b971bc1.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073125_1b971bc1.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073125_1b971bc1.ton
+Fin de ejecución
+
+[2025-07-09 16:58:49] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073129_697a95f3.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073129_697a95f3.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073129_697a95f3.ton
+Fin de ejecución
+
+[2025-07-09 16:59:01] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073141_e9aa2952.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073141_e9aa2952.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073141_e9aa2952.ton
+Fin de ejecución
+
+[2025-07-09 17:09:32] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752073772_4fbeb121.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752073772_4fbeb121.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752073772_4fbeb121.ton
+Fin de ejecución
+
+[2025-07-09 17:14:01] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752074041_7cd6f4cd.ton
+Tamaño: 78 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752074041_7cd6f4cd.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752074041_7cd6f4cd.ton
+Fin de ejecución
+
+[2025-07-09 17:14:02] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752074042_8e0a98ab.ton
+Tamaño: 77 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752074042_8e0a98ab.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752074042_8e0a98ab.ton
+Fin de ejecución
+
+[2025-07-09 17:14:04] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752074044_b5e64c68.ton
+Tamaño: 73 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752074044_b5e64c68.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752074044_b5e64c68.ton
+Fin de ejecución
+
+[2025-07-09 17:14:05] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752074045_3c0ba6dc.ton
+Tamaño: 73 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752074045_3c0ba6dc.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752074045_3c0ba6dc.ton
+Fin de ejecución
+
+[2025-07-09 17:15:57] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752074157_7e3559ec.ton
+Tamaño: 73 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752074157_7e3559ec.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752074157_7e3559ec.ton
+Fin de ejecución
+
+[2025-07-09 17:44:38] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752075878_d566eda2.ton
+Tamaño: 77 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752075878_d566eda2.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752075878_d566eda2.ton
+Fin de ejecución
+
+[2025-07-09 17:44:40] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752075880_0f409f2b.ton
+Tamaño: 74 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752075880_0f409f2b.ton" 2>&1
+
+[2025-07-09 17:44:40] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752075880_38d333a9.ton
+Tamaño: 74 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752075880_38d333a9.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752075880_0f409f2b.ton
+Fin de ejecución
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752075880_38d333a9.ton
+Fin de ejecución
+
+[2025-07-09 17:46:09] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752075969_8b74f2a9.ton
+Tamaño: 78 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752075969_8b74f2a9.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752075969_8b74f2a9.ton
+Fin de ejecución
+
+[2025-07-09 17:46:10] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752075970_bbd6b3c1.ton
+Tamaño: 74 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752075970_bbd6b3c1.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752075970_bbd6b3c1.ton
+Fin de ejecución
+
+[2025-07-09 17:46:25] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752075985_1b94264c.ton
+Tamaño: 73 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752075985_1b94264c.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752075985_1b94264c.ton
+Fin de ejecución
+
+[2025-07-09 17:46:48] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076008_9e286abf.ton
+Tamaño: 73 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076008_9e286abf.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076008_9e286abf.ton
+Fin de ejecución
+
+[2025-07-09 17:49:41] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076181_a53a91c1.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076181_a53a91c1.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076181_a53a91c1.ton
+Fin de ejecución
+
+[2025-07-09 17:49:48] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076188_f63c3cf4.ton
+Tamaño: 77 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076188_f63c3cf4.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076188_f63c3cf4.ton
+Fin de ejecución
+
+[2025-07-09 17:49:49] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076189_c85a2929.ton
+Tamaño: 74 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076189_c85a2929.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076189_c85a2929.ton
+Fin de ejecución
+
+[2025-07-09 17:50:21] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076221_9c3e0be1.ton
+Tamaño: 75 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076221_9c3e0be1.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076221_9c3e0be1.ton
+Fin de ejecución
+
+[2025-07-09 17:50:23] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076223_ba9b24ef.ton
+Tamaño: 74 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076223_ba9b24ef.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076223_ba9b24ef.ton
+Fin de ejecución
+
+[2025-07-09 17:50:24] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076224_086e5c01.ton
+Tamaño: 75 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076224_086e5c01.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076224_086e5c01.ton
+Fin de ejecución
+
+[2025-07-09 17:50:25] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076225_ffc1e831.ton
+Tamaño: 75 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076225_ffc1e831.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076225_ffc1e831.ton
+Fin de ejecución
+
+[2025-07-09 17:50:31] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076231_6a439d92.ton
+Tamaño: 74 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076231_6a439d92.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076231_6a439d92.ton
+Fin de ejecución
+
+[2025-07-09 17:54:28] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076468_48a25e02.ton
+Tamaño: 74 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076468_48a25e02.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076468_48a25e02.ton
+Fin de ejecución
+
+[2025-07-09 17:57:49] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076669_65ba1d0a.ton
+Tamaño: 75 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076669_65ba1d0a.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076669_65ba1d0a.ton
+Fin de ejecución
+
+[2025-07-09 17:57:50] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076670_a6a2388f.ton
+Tamaño: 75 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076670_a6a2388f.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076670_a6a2388f.ton
+Fin de ejecución
+
+[2025-07-09 17:58:05] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076685_0945c580.ton
+Tamaño: 76 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076685_0945c580.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076685_0945c580.ton
+Fin de ejecución
+
+[2025-07-09 17:58:22] Nueva ejecución
+ERROR: El código fuente está vacío
+#0 {main}Fin de ejecución
+
+[2025-07-09 17:58:23] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752076703_2c96c508.ton
+Tamaño: 55 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752076703_2c96c508.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752076703_2c96c508.ton
+Fin de ejecución
+
+[2025-07-09 18:04:19] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752077059_5c26a4b1.ton
+Tamaño: 53 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752077059_5c26a4b1.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752077059_5c26a4b1.ton
+Fin de ejecución
+
+[2025-07-09 18:04:21] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752077061_444b45ad.ton
+Tamaño: 53 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752077061_444b45ad.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752077061_444b45ad.ton
+Fin de ejecución
+
+[2025-07-09 18:13:10] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752077590_513b85ee.ton
+Tamaño: 53 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752077590_513b85ee.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752077590_513b85ee.ton
+Fin de ejecución
+
+[2025-07-09 18:14:11] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752077651_5c092e57.ton
+Tamaño: 53 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752077651_5c092e57.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752077651_5c092e57.ton
+Fin de ejecución
+
+[2025-07-10 00:32:38] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752100358_609bbd85.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752100358_609bbd85.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752100358_609bbd85.ton
+Fin de ejecución
+
+[2025-07-10 00:40:28] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752100828_5c26cf3b.ton
+Tamaño: 56 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752100828_5c26cf3b.ton" 2>&1
+
+[2025-07-10 00:40:28] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752100828_4cef972a.ton
+Tamaño: 56 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752100828_4cef972a.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752100828_5c26cf3b.ton
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752100828_4cef972a.ton
+Fin de ejecución
+
+[2025-07-10 00:49:06] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752101346_bcd14cce.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752101346_bcd14cce.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752101346_bcd14cce.ton
+Fin de ejecución
+
+[2025-07-10 00:49:29] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752101369_d584b13d.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752101369_d584b13d.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752101369_d584b13d.ton
+Fin de ejecución
+
+[2025-07-10 00:50:33] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752101433_8441c61b.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752101433_8441c61b.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752101433_8441c61b.ton
+Fin de ejecución
+
+[2025-07-10 00:50:55] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752101455_502f2bc6.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752101455_502f2bc6.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752101455_502f2bc6.ton
+Fin de ejecución
+
+[2025-07-10 00:51:46] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752101506_f6336aed.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752101506_f6336aed.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752101506_f6336aed.ton
+Fin de ejecución
+
+[2025-07-10 00:52:19] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752101539_91786122.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752101539_91786122.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752101539_91786122.ton
+Fin de ejecución
+
+[2025-07-10 01:06:37] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752102397_60231108.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752102397_60231108.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752102397_60231108.ton
+Fin de ejecución
+
+[2025-07-10 01:13:54] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752102834_9219dda7.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752102834_9219dda7.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752102834_9219dda7.ton
+Fin de ejecución
+
+[2025-07-10 01:15:00] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752102900_a5f92722.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752102900_a5f92722.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752102900_a5f92722.ton
+Fin de ejecución
+
+[2025-07-10 01:19:02] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752103142_193de617.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752103142_193de617.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752103142_193de617.ton
+Fin de ejecución
+
+[2025-07-10 01:20:32] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752103232_45df3865.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752103232_45df3865.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752103232_45df3865.ton
+Fin de ejecución
+
+[2025-07-10 01:20:41] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752103241_c72dff6f.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752103241_c72dff6f.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752103241_c72dff6f.ton
+Fin de ejecución
+
+[2025-07-10 01:20:49] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752103249_9ee5a2a4.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752103249_9ee5a2a4.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752103249_9ee5a2a4.ton
+Fin de ejecución
+
+[2025-07-10 01:20:56] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752103256_fc6471a3.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752103256_fc6471a3.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752103256_fc6471a3.ton
+Fin de ejecución
+
+[2025-07-10 01:21:04] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752103264_7fc1075f.ton
+Tamaño: 81 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752103264_7fc1075f.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752103264_7fc1075f.ton
+Fin de ejecución
+
+[2025-07-10 01:21:15] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752103275_ee560905.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752103275_ee560905.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752103275_ee560905.ton
+Fin de ejecución
+
+[2025-07-10 01:21:43] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752103303_caecd76a.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752103303_caecd76a.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752103303_caecd76a.ton
+Fin de ejecución
+
+[2025-07-10 01:21:43] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752103303_d7f6f548.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752103303_d7f6f548.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752103303_d7f6f548.ton
+Fin de ejecución
+
+[2025-07-10 01:21:55] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752103315_1d668d99.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752103315_1d668d99.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752103315_1d668d99.ton
+Fin de ejecución
+
+[2025-07-10 01:22:09] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752103329_cee11aea.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752103329_cee11aea.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752103329_cee11aea.ton
+Fin de ejecución
+
+[2025-07-10 01:22:18] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752103338_a7bb79c0.ton
+Tamaño: 66 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752103338_a7bb79c0.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752103338_a7bb79c0.ton
+Fin de ejecución
+
+[2025-07-10 16:12:12] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752156732_cd43d0bb.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752156732_cd43d0bb.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752156732_cd43d0bb.ton
+Fin de ejecución
+
+[2025-07-10 17:07:36] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752160056_078b9abd.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752160056_078b9abd.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752160056_078b9abd.ton
+Fin de ejecución
+
+[2025-07-10 17:21:46] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752160906_1c0c8029.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752160906_1c0c8029.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752160906_1c0c8029.ton
+Fin de ejecución
+
+[2025-07-10 17:22:26] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752160946_26772a9d.ton
+Tamaño: 59 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752160946_26772a9d.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752160946_26772a9d.ton
+Fin de ejecución
+
+[2025-07-10 17:22:28] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752160948_8e2b5578.ton
+Tamaño: 54 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752160948_8e2b5578.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752160948_8e2b5578.ton
+Fin de ejecución
+
+[2025-07-10 17:22:42] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752160962_5a20caef.ton
+Tamaño: 57 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752160962_5a20caef.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752160962_5a20caef.ton
+Fin de ejecución
+
+[2025-07-10 17:22:59] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752160979_dce4bdde.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752160979_dce4bdde.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752160979_dce4bdde.ton
+Fin de ejecución
+
+[2025-07-11 16:49:14] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752245354_16b48743.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752245354_16b48743.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752245354_16b48743.ton
+Fin de ejecución
+
+[2025-07-11 16:50:54] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752245454_424ac843.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752245454_424ac843.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752245454_424ac843.ton
+Fin de ejecución
+
+[2025-07-11 16:55:04] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752245704_ecedc506.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752245704_ecedc506.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752245704_ecedc506.ton
+Fin de ejecución
+
+[2025-07-11 17:06:29] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752246389_b0c74533.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752246389_b0c74533.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752246389_b0c74533.ton
+Fin de ejecución
+
+[2025-07-11 17:10:00] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752246600_bab82006.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752246600_bab82006.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752246600_bab82006.ton
+Fin de ejecución
+
+[2025-07-11 17:14:47] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752246887_aaeb6cfc.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752246887_aaeb6cfc.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752246887_aaeb6cfc.ton
+Fin de ejecución
+
+[2025-07-12 02:54:04] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752281644_d8460fca.ton
+Tamaño: 68 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752281644_d8460fca.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752281644_d8460fca.ton
+Fin de ejecución
+
+[2025-07-12 03:00:22] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752282022_0a64f660.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752282022_0a64f660.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752282022_0a64f660.ton
+Fin de ejecución
+
+[2025-07-12 03:00:48] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752282048_0ca22d6d.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752282048_0ca22d6d.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752282048_0ca22d6d.ton
+Fin de ejecución
+
+[2025-07-12 03:00:55] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752282055_ea2b3e36.ton
+Tamaño: 68 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752282055_ea2b3e36.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752282055_ea2b3e36.ton
+Fin de ejecución
+
+[2025-07-12 03:03:45] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752282225_376b577f.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752282225_376b577f.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752282225_376b577f.ton
+Fin de ejecución
+
+[2025-07-12 03:04:19] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752282259_06b9b876.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752282259_06b9b876.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752282259_06b9b876.ton
+Fin de ejecución
+
+[2025-07-12 03:15:39] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752282939_85a5199a.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752282939_85a5199a.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752282939_85a5199a.ton
+Fin de ejecución
+
+[2025-07-12 03:17:48] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752283068_304e7ad5.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752283068_304e7ad5.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752283068_304e7ad5.ton
+Fin de ejecución
+
+[2025-07-12 09:04:55] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752303895_6eb20f50.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752303895_6eb20f50.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752303895_6eb20f50.ton
+Fin de ejecución
+
+[2025-07-12 09:05:06] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752303906_5bd5fb7c.ton
+Tamaño: 67 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752303906_5bd5fb7c.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752303906_5bd5fb7c.ton
+Fin de ejecución
+
+[2025-07-12 09:05:10] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752303910_85259be0.ton
+Tamaño: 66 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752303910_85259be0.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752303910_85259be0.ton
+Fin de ejecución
+
+[2025-07-12 09:05:12] Nueva ejecución
+Archivo temporal: C:\xampp\htdocs\compilador\tmp\tonayu_1752303912_c2250438.ton
+Tamaño: 69 bytes
+Ejecutando comando: python "C:\xampp\htdocs\compilador\interpreter.py" "C:\xampp\htdocs\compilador\tmp\tonayu_1752303912_c2250438.ton" 2>&1
+Archivo temporal eliminado: C:\xampp\htdocs\compilador\tmp\tonayu_1752303912_c2250438.ton
+Fin de ejecución
+
+[2025-07-12 09:07:57] Nueva ejecución
+
+[2025-07-12 09:07:59] Nueva ejecución
+
+[2025-07-12 09:08:00] Nueva ejecución
+
+[2025-07-12 09:08:01] Nueva ejecución
+
+[2025-07-12 16:13:18] Nueva ejecución
+
+[2025-07-12 16:13:22] Nueva ejecución
+
+[2025-07-12 16:13:25] Nueva ejecución
+
+[2025-07-12 16:13:31] Nueva ejecución
+
+[2025-07-12 16:13:36] Nueva ejecución
+
+[2025-07-12 16:13:41] Nueva ejecución
+
+[2025-07-12 16:13:45] Nueva ejecución
+
+[2025-07-12 16:15:18] Nueva ejecución
+
+[2025-07-12 16:15:19] Nueva ejecución
+
+[2025-07-12 16:16:27] Nueva ejecución
+
+[2025-07-12 16:18:51] Nueva ejecución
+
+[2025-07-12 16:18:51] Nueva ejecución
+
+[2025-07-12 16:56:09] Nueva ejecución
+
+[2025-07-12 16:59:08] Nueva ejecución
+
+[2025-07-12 16:59:22] Nueva ejecución
+
+[2025-07-12 16:59:23] Nueva ejecución
+
+[2025-07-12 16:59:48] Nueva ejecución
+
+[2025-07-12 16:59:48] Nueva ejecución
+
+[2025-07-12 17:00:31] Nueva ejecución
+
+[2025-07-12 17:00:31] Nueva ejecución
+
+[2025-07-12 17:30:52] Nueva ejecución
+
+[2025-07-12 17:37:42] Nueva ejecución
+
+[2025-07-12 17:37:44] Nueva ejecución
+
+[2025-07-12 17:37:45] Nueva ejecución
+
+[2025-07-12 17:37:52] Nueva ejecución
+
+[2025-07-12 17:37:53] Nueva ejecución
+
+[2025-07-13 07:04:02] Nueva ejecución
+
+[2025-07-13 07:05:23] Nueva ejecución
+
+[2025-07-13 07:14:55] Nueva ejecución
+
+[2025-07-13 07:17:50] Nueva ejecución
+
+[2025-07-13 07:17:53] Nueva ejecución
+
+[2025-07-13 07:17:57] Nueva ejecución
+
+[2025-07-13 07:18:08] Nueva ejecución
+
+[2025-07-13 07:19:20] Nueva ejecución
+
+[2025-07-13 07:19:23] Nueva ejecución
+
+[2025-07-13 07:21:22] Nueva ejecución
+
+[2025-07-13 07:43:51] Nueva ejecución
+
+[2025-07-13 07:44:47] Nueva ejecución
+
+[2025-07-13 18:20:37] Nueva ejecución
+
+[2025-07-13 18:20:37] Nueva ejecución
+
+[2025-07-13 18:23:44] Nueva ejecución
+
+[2025-07-13 18:23:44] Nueva ejecución
+
+[2025-07-13 18:23:50] Nueva ejecución
+
+[2025-07-13 18:24:32] Nueva ejecución
+
+[2025-07-13 18:24:42] Nueva ejecución
+
+[2025-07-13 18:25:18] Nueva ejecución
+
+[2025-07-13 18:25:46] Nueva ejecución
+
+[2025-07-13 18:25:58] Nueva ejecución
+
+[2025-07-13 18:26:03] Nueva ejecución
+
+[2025-07-13 18:26:09] Nueva ejecución
+
+[2025-07-13 18:26:10] Nueva ejecución
+
+[2025-07-13 18:26:10] Nueva ejecución
+
+[2025-07-13 18:26:11] Nueva ejecución
+
+[2025-07-13 18:26:19] Nueva ejecución
+
+[2025-07-13 18:26:21] Nueva ejecución
+
+[2025-07-13 18:26:31] Nueva ejecución
+
+[2025-07-13 18:27:08] Nueva ejecución
+
+[2025-07-13 18:27:18] Nueva ejecución
+
+[2025-07-13 18:27:56] Nueva ejecución
+
+[2025-07-13 18:28:02] Nueva ejecución
+
+[2025-07-13 18:28:14] Nueva ejecución
+
+[2025-07-13 19:26:00] Nueva ejecución
+
+[2025-07-13 19:26:01] Nueva ejecución
+
+[2025-07-13 19:26:17] Nueva ejecución
+
+[2025-07-13 19:26:19] Nueva ejecución
+
+[2025-07-13 19:26:27] Nueva ejecución
+
+[2025-07-13 19:26:33] Nueva ejecución
+
+[2025-07-13 19:26:34] Nueva ejecución
+
+[2025-07-13 19:26:38] Nueva ejecución
+
+[2025-07-13 19:28:14] Nueva ejecución
+
+[2025-07-13 19:35:59] Nueva ejecución
+
+[2025-07-13 19:35:59] Nueva ejecución
+
+[2025-07-13 19:54:30] Nueva ejecución
+
+[2025-07-13 20:33:45] Nueva ejecución
+
+[2025-07-13 20:33:54] Nueva ejecución
+
+[2025-07-13 20:34:41] Nueva ejecución
+
+[2025-07-13 20:35:21] Nueva ejecución
+
+[2025-07-13 20:35:30] Nueva ejecución
+
+[2025-07-13 20:35:36] Nueva ejecución
+
+[2025-07-13 20:35:37] Nueva ejecución
+
+[2025-07-13 20:35:40] Nueva ejecución
+
+[2025-07-13 20:35:42] Nueva ejecución
+
+[2025-07-13 20:35:44] Nueva ejecución
+
+[2025-07-13 20:35:56] Nueva ejecución
+
+[2025-07-13 20:35:57] Nueva ejecución
+
+[2025-07-13 20:37:23] Nueva ejecución
+
+[2025-07-13 20:37:37] Nueva ejecución
+
+[2025-07-13 21:04:06] Nueva ejecución
+
+[2025-07-13 21:04:09] Nueva ejecución
+
+[2025-07-13 21:04:12] Nueva ejecución
+
+[2025-07-13 22:02:11] Nueva ejecución
+
+[2025-07-13 22:04:22] Nueva ejecución
+
+[2025-07-13 22:06:22] Nueva ejecución
+
+[2025-07-13 22:06:24] Nueva ejecución
+
+[2025-07-13 22:06:27] Nueva ejecución
+
+[2025-07-13 22:22:45] Nueva ejecución
+
+[2025-07-13 22:23:15] Nueva ejecución
+
+[2025-07-13 22:23:16] Nueva ejecución
+
+[2025-07-13 22:23:22] Nueva ejecución
+
+[2025-07-13 22:23:24] Nueva ejecución
+
+[2025-07-13 22:23:26] Nueva ejecución
+
+[2025-07-13 22:23:29] Nueva ejecución
+
+[2025-07-13 22:23:35] Nueva ejecución
+
+[2025-07-13 22:23:48] Nueva ejecución
+
+[2025-07-13 22:24:04] Nueva ejecución
+
+[2025-07-13 22:24:53] Nueva ejecución
+
+[2025-07-13 22:25:01] Nueva ejecución
+
+[2025-07-13 22:25:06] Nueva ejecución
+
+[2025-07-13 22:25:27] Nueva ejecución
+
+[2025-07-13 22:25:30] Nueva ejecución
+
+[2025-07-13 22:25:37] Nueva ejecución
+
+[2025-07-13 22:25:38] Nueva ejecución
+
+[2025-07-13 22:26:14] Nueva ejecución
+
+[2025-07-13 22:27:52] Nueva ejecución
+
+[2025-07-13 22:27:52] Nueva ejecución
+
+[2025-07-13 22:46:26] Nueva ejecución
+
+[2025-07-13 22:53:17] Nueva ejecución
+
+[2025-07-13 22:54:58] Nueva ejecución
+
+[2025-07-13 23:01:52] Nueva ejecución
+
+[2025-07-13 23:01:59] Nueva ejecución
+
+[2025-07-14 05:26:32] Nueva ejecución
+
+[2025-07-14 05:26:33] Nueva ejecución
+
+[2025-07-14 05:30:55] Nueva ejecución
+
+[2025-07-14 05:35:16] Nueva ejecución
+
+[2025-07-14 05:35:16] Nueva ejecución
+
+[2025-07-14 05:35:22] Nueva ejecución
+
+[2025-07-14 05:35:57] Nueva ejecución
+
+[2025-07-14 05:35:59] Nueva ejecución
+
+[2025-07-14 05:36:38] Nueva ejecución
+
+[2025-07-14 05:36:43] Nueva ejecución
+
+[2025-07-14 05:36:47] Nueva ejecución
+
+[2025-07-14 05:36:49] Nueva ejecución
+
+[2025-07-14 05:36:51] Nueva ejecución
+
+[2025-07-14 05:37:59] Nueva ejecución
+
+[2025-07-14 05:38:03] Nueva ejecución
+
+[2025-07-14 05:38:06] Nueva ejecución
+
+[2025-07-14 05:38:07] Nueva ejecución
+
+[2025-07-14 05:38:15] Nueva ejecución
+
+[2025-07-14 05:38:15] Nueva ejecución
+
+[2025-07-14 05:38:22] Nueva ejecución
+
+[2025-07-14 05:38:23] Nueva ejecución
+
+[2025-07-14 05:38:28] Nueva ejecución
+
+[2025-07-14 05:39:04] Nueva ejecución
+
+[2025-07-14 06:13:03] Nueva ejecución
+
+[2025-07-14 06:16:02] Nueva ejecución
+
+[2025-07-14 06:17:34] Nueva ejecución
+
+[2025-07-14 06:18:03] Nueva ejecución
+
+[2025-07-14 06:18:29] Nueva ejecución
+
+[2025-07-14 06:26:37] Nueva ejecución
+
+[2025-07-14 06:30:39] Nueva ejecución
+
+[2025-07-14 06:31:09] Nueva ejecución
+
+[2025-07-14 06:32:00] Nueva ejecución
+
+[2025-07-14 06:32:16] Nueva ejecución
+
+[2025-07-14 06:33:06] Nueva ejecución
+
+[2025-07-14 06:33:16] Nueva ejecución
+
+[2025-07-14 06:36:10] Nueva ejecución
+
+[2025-07-14 06:37:41] Nueva ejecución
+
+[2025-07-14 06:39:24] Nueva ejecución
+
+[2025-07-14 06:41:33] Nueva ejecución
+
+[2025-07-14 06:42:51] Nueva ejecución
+
+[2025-07-14 06:43:09] Nueva ejecución
+
+[2025-07-14 06:44:52] Nueva ejecución
+
+[2025-07-14 06:45:07] Nueva ejecución
+
+[2025-07-14 16:07:57] Nueva ejecución
+
+[2025-07-14 16:08:10] Nueva ejecución
+
+[2025-07-14 16:08:20] Nueva ejecución
+
+[2025-07-14 16:08:28] Nueva ejecución
+
+[2025-07-14 16:08:29] Nueva ejecución
+
+[2025-07-14 16:27:47] Nueva ejecución
+
+[2025-07-15 18:02:16] Nueva ejecución
+
+[2025-07-15 18:02:30] Nueva ejecución
+
+[2025-07-15 18:02:38] Nueva ejecución
+
+[2025-07-15 18:07:02] Nueva ejecución
+
+[2025-07-15 18:07:40] Nueva ejecución
+
+[2025-07-15 18:07:45] Nueva ejecución
+
+[2025-07-15 18:07:53] Nueva ejecución
+
+[2025-07-15 18:07:53] Nueva ejecución
+
+[2025-07-15 18:07:54] Nueva ejecución
+
+[2025-07-15 18:07:54] Nueva ejecución
+
+[2025-07-15 18:07:54] Nueva ejecución
+
+[2025-07-15 18:07:54] Nueva ejecución
+
+[2025-07-15 18:07:54] Nueva ejecución
+
+[2025-07-15 18:08:41] Nueva ejecución
+
+[2025-07-15 18:09:10] Nueva ejecución
+
+[2025-07-15 18:09:20] Nueva ejecución
+
+[2025-07-15 18:10:00] Nueva ejecución
+
+[2025-07-15 18:10:11] Nueva ejecución
+
+[2025-07-15 18:10:53] Nueva ejecución
+
+[2025-07-15 18:11:00] Nueva ejecución
+
+[2025-07-15 22:49:54] Nueva ejecución
+
+[2025-07-15 22:49:54] Nueva ejecución
+
+[2025-07-15 22:54:43] Nueva ejecución
+
+[2025-07-15 22:54:57] Nueva ejecución
+
+[2025-07-15 22:56:02] Nueva ejecución
+
+[2025-07-15 22:57:04] Nueva ejecución
+
+[2025-07-15 22:57:35] Nueva ejecución
+
+[2025-07-16 07:21:50] Nueva ejecución
+
+[2025-07-16 07:21:52] Nueva ejecución
+
+[2025-07-16 07:21:53] Nueva ejecución
+
+[2025-07-16 07:22:02] Nueva ejecución
+
+[2025-07-16 07:22:08] Nueva ejecución
+
+[2025-07-16 16:00:04] Nueva ejecución
+
+[2025-07-16 16:00:06] Nueva ejecución
+
+[2025-07-16 16:00:10] Nueva ejecución
+
+[2025-07-16 16:00:10] Nueva ejecución
+
+[2025-07-16 16:00:16] Nueva ejecución
+
+[2025-07-16 16:20:12] Nueva ejecución
+
+[2025-07-16 16:32:36] Nueva ejecución
+
+[2025-07-16 16:33:01] Nueva ejecución
+
+[2025-07-16 16:34:42] Nueva ejecución
+
+[2025-07-16 16:35:04] Nueva ejecución
+
+[2025-07-16 16:35:27] Nueva ejecución
+
+[2025-07-16 16:37:18] Nueva ejecución
+
+[2025-07-16 17:05:58] Nueva ejecución
+
+[2025-07-16 17:05:58] Nueva ejecución
+
+[2025-07-16 17:09:33] Nueva ejecución
+
+[2025-07-16 17:09:38] Nueva ejecución
+
+[2025-07-16 17:09:38] Nueva ejecución
+
+[2025-07-16 17:09:47] Nueva ejecución
+
+[2025-07-16 17:09:53] Nueva ejecución
+
+[2025-07-16 17:09:58] Nueva ejecución
+
+[2025-07-16 17:10:03] Nueva ejecución
+
+[2025-07-16 17:11:58] Nueva ejecución
+
+[2025-07-16 17:13:58] Nueva ejecución
+
+[2025-07-16 17:14:10] Nueva ejecución
+
+[2025-07-16 17:14:13] Nueva ejecución
+
+[2025-07-16 17:15:25] Nueva ejecución
+
+[2025-07-16 17:15:27] Nueva ejecución
+
+[2025-07-16 17:15:36] Nueva ejecución
+
+[2025-07-16 17:15:39] Nueva ejecución
+
+[2025-07-16 17:15:44] Nueva ejecución
+
+[2025-07-16 17:15:48] Nueva ejecución
+
+[2025-07-16 17:15:52] Nueva ejecución
+
+[2025-07-16 17:15:55] Nueva ejecución
+
+[2025-07-16 17:16:01] Nueva ejecución
+
+[2025-07-16 17:16:04] Nueva ejecución
+
+[2025-07-16 17:16:08] Nueva ejecución
+
+[2025-07-16 17:16:13] Nueva ejecución
+
+[2025-07-16 17:16:25] Nueva ejecución
+
+[2025-07-16 17:16:31] Nueva ejecución
+
+[2025-07-16 17:16:36] Nueva ejecución
+
+[2025-07-16 17:16:38] Nueva ejecución
+
+[2025-07-16 17:17:21] Nueva ejecución
+
+[2025-07-16 17:17:24] Nueva ejecución
+
+[2025-07-16 17:17:41] Nueva ejecución
+
+[2025-07-16 17:18:05] Nueva ejecución
+
+[2025-07-16 17:18:05] Nueva ejecución
+
+[2025-07-16 17:18:24] Nueva ejecución
+
+[2025-07-16 17:18:25] Nueva ejecución
+
+[2025-07-16 17:18:34] Nueva ejecución
+
+[2025-07-16 17:18:36] Nueva ejecución
+
+[2025-07-16 17:24:19] Nueva ejecución
+
+[2025-07-16 17:24:29] Nueva ejecución
+
+[2025-07-16 17:24:29] Nueva ejecución
+
+[2025-07-16 17:36:20] Nueva ejecución
+
+[2025-07-16 17:36:20] Nueva ejecución
+
+[2025-07-16 17:37:54] Nueva ejecución
+
+[2025-07-16 17:37:55] Nueva ejecución
+
+[2025-07-16 17:37:58] Nueva ejecución
+
+[2025-07-16 17:38:03] Nueva ejecución
+
+[2025-07-16 17:39:23] Nueva ejecución
+
+[2025-07-16 17:39:30] Nueva ejecución
+
+[2025-07-16 17:39:31] Nueva ejecución
+
+[2025-07-16 17:40:01] Nueva ejecución
+
+[2025-07-16 17:40:10] Nueva ejecución
+
+[2025-07-16 17:40:15] Nueva ejecución
+
+[2025-07-16 17:40:18] Nueva ejecución
+
+[2025-07-16 17:40:20] Nueva ejecución
+
+[2025-07-16 17:40:23] Nueva ejecución
+
+[2025-07-16 17:40:25] Nueva ejecución
+
+[2025-07-16 17:40:30] Nueva ejecución
+
+[2025-07-16 17:40:37] Nueva ejecución
+
+[2025-07-16 17:40:48] Nueva ejecución
+
+[2025-07-16 17:41:00] Nueva ejecución
+
+[2025-07-16 17:41:03] Nueva ejecución
+
+[2025-07-16 17:48:52] Nueva ejecución
+
+[2025-07-16 17:48:57] Nueva ejecución
+
+[2025-07-16 17:48:58] Nueva ejecución
+
+[2025-07-16 17:49:57] Nueva ejecución
+
+[2025-07-16 17:50:05] Nueva ejecución
+
+[2025-07-16 17:50:13] Nueva ejecución
+
+[2025-07-16 17:50:25] Nueva ejecución
+
+[2025-07-16 17:50:32] Nueva ejecución
+
+[2025-07-16 17:50:35] Nueva ejecución
+
+[2025-07-16 17:50:39] Nueva ejecución
+
+[2025-07-16 18:04:14] Nueva ejecución
+
+[2025-07-16 18:04:17] Nueva ejecución
+
+[2025-07-16 20:11:20] Nueva ejecución
+
+[2025-07-16 20:11:26] Nueva ejecución
+
+[2025-07-16 20:11:39] Nueva ejecución
+
+[2025-07-16 20:11:41] Nueva ejecución
+
+[2025-07-16 20:11:49] Nueva ejecución
+
+[2025-07-16 20:18:23] Nueva ejecución
+
+[2025-07-16 20:23:56] Nueva ejecución
+
+[2025-07-16 20:23:57] Nueva ejecución
+
+[2025-07-16 20:37:46] Nueva ejecución
+
+[2025-07-16 20:38:46] Nueva ejecución
+
+[2025-07-16 20:38:49] Nueva ejecución
+
+[2025-07-16 20:38:54] Nueva ejecución
+
+[2025-07-16 20:38:57] Nueva ejecución
+
+[2025-07-16 20:38:59] Nueva ejecución
+
+[2025-07-16 20:39:05] Nueva ejecución
+
+[2025-07-16 20:39:07] Nueva ejecución
+
+[2025-07-16 20:39:23] Nueva ejecución
+
+[2025-07-16 20:39:24] Nueva ejecución
+
+[2025-07-16 20:39:31] Nueva ejecución
+
+[2025-07-16 20:39:35] Nueva ejecución
+
+[2025-07-16 20:39:50] Nueva ejecución
+
+[2025-07-16 20:39:52] Nueva ejecución
+
+[2025-07-16 20:40:05] Nueva ejecución
+
+[2025-07-16 20:41:35] Nueva ejecución
+
+[2025-07-16 20:42:11] Nueva ejecución
+
+[2025-07-16 20:42:14] Nueva ejecución
+
+[2025-07-16 20:42:18] Nueva ejecución
+
+[2025-07-16 20:42:54] Nueva ejecución
+
+[2025-07-16 20:42:54] Nueva ejecución
+
+[2025-07-16 20:42:56] Nueva ejecución
+
+[2025-07-16 20:42:57] Nueva ejecución
+
+[2025-07-16 20:42:59] Nueva ejecución
+
+[2025-07-16 20:43:02] Nueva ejecución
+
+[2025-07-16 20:43:06] Nueva ejecución
+
+[2025-07-16 20:43:08] Nueva ejecución
+
+[2025-07-16 20:43:16] Nueva ejecución
+
+[2025-07-16 20:43:23] Nueva ejecución
+
+[2025-07-16 20:43:26] Nueva ejecución
+
+[2025-07-16 20:43:36] Nueva ejecución
+
+[2025-07-16 20:48:37] Nueva ejecución
+
+[2025-07-16 20:50:04] Nueva ejecución
+
+[2025-07-16 20:50:09] Nueva ejecución
+
+[2025-07-16 20:58:21] Nueva ejecución
+
+[2025-07-16 21:01:18] Nueva ejecución
+
+[2025-07-16 21:01:19] Nueva ejecución
+
+[2025-07-16 21:01:31] Nueva ejecución
+
+[2025-07-16 21:01:33] Nueva ejecución
+
+[2025-07-16 21:01:36] Nueva ejecución
+
+[2025-07-16 21:01:42] Nueva ejecución
+
+[2025-07-16 21:01:52] Nueva ejecución
+
+[2025-07-16 21:02:25] Nueva ejecución
+
+[2025-07-16 21:02:58] Nueva ejecución
+
+[2025-07-16 21:03:32] Nueva ejecución
+
+[2025-07-16 21:32:40] Nueva ejecución
+
+[2025-07-16 21:32:40] Nueva ejecución
+
+[2025-07-16 21:32:55] Nueva ejecución
+
+[2025-07-16 21:32:59] Nueva ejecución
+
+[2025-07-16 21:33:00] Nueva ejecución
+
+[2025-07-16 21:33:03] Nueva ejecución
+
+[2025-07-16 21:33:04] Nueva ejecución
+
+[2025-07-16 21:33:07] Nueva ejecución
+
+[2025-07-16 21:33:09] Nueva ejecución
+
+[2025-07-16 21:33:14] Nueva ejecución
+
+[2025-07-16 21:33:18] Nueva ejecución
+
+[2025-07-16 21:33:22] Nueva ejecución
+
+[2025-07-16 21:33:24] Nueva ejecución
+
+[2025-07-16 21:33:28] Nueva ejecución
+
+[2025-07-16 21:33:34] Nueva ejecución
+
+[2025-07-16 21:33:40] Nueva ejecución
+
+[2025-07-16 21:33:41] Nueva ejecución
+
+[2025-07-16 21:49:32] Nueva ejecución
+
+[2025-07-16 21:49:36] Nueva ejecución
+
+[2025-07-16 21:50:31] Nueva ejecución
+
+[2025-07-16 21:52:00] Nueva ejecución
+
+[2025-07-16 21:55:12] Nueva ejecución
+
+[2025-07-16 21:55:27] Nueva ejecución
+
+[2025-07-16 21:55:28] Nueva ejecución
+
+[2025-07-16 21:55:58] Nueva ejecución
+
+[2025-07-16 21:56:00] Nueva ejecución
+
+[2025-07-16 21:56:02] Nueva ejecución
+
+[2025-07-16 21:56:03] Nueva ejecución
+
+[2025-07-16 21:56:06] Nueva ejecución
+
+[2025-07-16 22:00:43] Nueva ejecución
+
+[2025-07-16 22:00:51] Nueva ejecución
+
+[2025-07-16 22:01:01] Nueva ejecución
+
+[2025-07-16 22:01:06] Nueva ejecución
+
+[2025-07-16 22:04:27] Nueva ejecución
+
+[2025-07-16 22:04:39] Nueva ejecución
+
+[2025-07-16 22:04:46] Nueva ejecución
+
+[2025-07-16 22:04:49] Nueva ejecución
+
+[2025-07-16 22:05:48] Nueva ejecución
+
+[2025-07-16 22:07:21] Nueva ejecución
+
+[2025-07-16 22:09:48] Nueva ejecución
+
+[2025-07-16 22:09:55] Nueva ejecución
+
+[2025-07-16 22:10:00] Nueva ejecución
+
+[2025-07-16 22:10:08] Nueva ejecución
+
+[2025-07-16 22:12:16] Nueva ejecución
+
+[2025-07-16 22:16:14] Nueva ejecución
+
+[2025-07-16 22:16:39] Nueva ejecución
+
+[2025-07-16 22:16:47] Nueva ejecución
+
+[2025-07-16 22:16:51] Nueva ejecución
+
+[2025-07-16 22:16:53] Nueva ejecución
+
+[2025-07-16 22:17:01] Nueva ejecución
+
+[2025-07-16 22:17:14] Nueva ejecución
+
+[2025-07-16 22:19:38] Nueva ejecución
+
+[2025-07-16 22:19:40] Nueva ejecución
+
+[2025-07-16 22:20:08] Nueva ejecución
+
+[2025-07-16 22:20:11] Nueva ejecución
+
+[2025-07-16 22:20:18] Nueva ejecución
+
+[2025-07-16 22:20:58] Nueva ejecución
+
+[2025-07-16 22:21:08] Nueva ejecución
+
+[2025-07-16 22:21:10] Nueva ejecución
+
+[2025-07-16 22:21:49] Nueva ejecución
+
+[2025-07-16 22:21:51] Nueva ejecución
+
+[2025-07-16 22:21:52] Nueva ejecución
+
+[2025-07-16 22:22:01] Nueva ejecución
+
+[2025-07-16 22:22:03] Nueva ejecución
+
+[2025-07-16 22:22:13] Nueva ejecución
+
+[2025-07-16 22:22:15] Nueva ejecución
+
+[2025-07-16 22:22:30] Nueva ejecución
+
+[2025-07-16 22:22:39] Nueva ejecución
+
+[2025-07-16 22:22:41] Nueva ejecución
+
+[2025-07-16 22:24:06] Nueva ejecución
+
+[2025-07-16 22:24:28] Nueva ejecución
+
+[2025-07-16 22:24:52] Nueva ejecución
+
+[2025-07-16 22:25:39] Nueva ejecución
+
+[2025-07-16 22:25:41] Nueva ejecución
+
+[2025-07-16 22:25:44] Nueva ejecución
+
+[2025-07-16 22:25:45] Nueva ejecución
+
+[2025-07-16 22:26:57] Nueva ejecución
+
+[2025-07-16 22:27:40] Nueva ejecución
+
+[2025-07-16 22:28:57] Nueva ejecución
+
+[2025-07-16 22:28:58] Nueva ejecución
+
+[2025-07-16 22:29:05] Nueva ejecución
+
+[2025-07-16 22:29:06] Nueva ejecución
+
+[2025-07-16 22:29:08] Nueva ejecución
+
+[2025-07-16 22:29:18] Nueva ejecución
+
+[2025-07-16 22:30:27] Nueva ejecución
+
+[2025-07-16 22:30:31] Nueva ejecución
+
+[2025-07-16 22:30:44] Nueva ejecución
+
+[2025-07-16 22:30:46] Nueva ejecución
+
+[2025-07-16 22:31:56] Nueva ejecución
+
+[2025-07-16 22:32:00] Nueva ejecución
+
+[2025-07-16 22:32:09] Nueva ejecución
+
+[2025-07-16 22:32:11] Nueva ejecución
+
+[2025-07-16 22:32:12] Nueva ejecución
+
+[2025-07-16 22:41:34] Nueva ejecución
+
+[2025-07-16 22:42:58] Nueva ejecución
+
+[2025-07-16 22:42:59] Nueva ejecución
+
+[2025-07-16 22:43:06] Nueva ejecución
+
+[2025-07-16 22:43:10] Nueva ejecución
+
+[2025-07-16 22:43:19] Nueva ejecución
+
+[2025-07-16 22:43:21] Nueva ejecución
+
+[2025-07-16 22:43:31] Nueva ejecución
+
+[2025-07-16 22:43:35] Nueva ejecución
+
+[2025-07-16 22:43:37] Nueva ejecución
+
+[2025-07-16 22:43:47] Nueva ejecución
+
+[2025-07-16 22:43:53] Nueva ejecución
+
+[2025-07-16 22:44:00] Nueva ejecución
+
+[2025-07-16 22:44:05] Nueva ejecución
+
+[2025-07-16 22:44:06] Nueva ejecución
+
+[2025-07-16 22:44:20] Nueva ejecución
+
+[2025-07-16 22:44:21] Nueva ejecución
+
+[2025-07-16 22:44:30] Nueva ejecución
+
+[2025-07-16 22:44:51] Nueva ejecución
+
+[2025-07-16 22:44:58] Nueva ejecución
+
+[2025-07-16 23:05:06] Nueva ejecución
+
+[2025-07-16 23:05:09] Nueva ejecución
+
+[2025-07-16 23:06:40] Nueva ejecución
+
+[2025-07-16 23:06:44] Nueva ejecución
+
+[2025-07-16 23:06:45] Nueva ejecución
+
+[2025-07-16 23:06:55] Nueva ejecución
+
+[2025-07-16 23:06:57] Nueva ejecución
+
+[2025-07-16 23:06:59] Nueva ejecución
+
+[2025-07-16 23:07:03] Nueva ejecución
+
+[2025-07-16 23:14:01] Nueva ejecución
+
+[2025-07-16 23:14:37] Nueva ejecución
+
+[2025-07-16 23:14:48] Nueva ejecución
+
+[2025-07-16 23:15:01] Nueva ejecución
+
+[2025-07-16 23:15:29] Nueva ejecución
+
+[2025-07-16 23:15:39] Nueva ejecución
+
+[2025-07-16 23:16:52] Nueva ejecución
+
+[2025-07-16 23:16:59] Nueva ejecución
+
+[2025-07-16 23:17:03] Nueva ejecución
+
+[2025-07-16 23:17:07] Nueva ejecución
+
+[2025-07-16 23:17:09] Nueva ejecución
+
+[2025-07-17 03:32:53] Nueva ejecución
+
+[2025-07-17 03:33:05] Nueva ejecución
+
+[2025-07-17 03:33:07] Nueva ejecución
+
+[2025-07-17 03:33:07] Nueva ejecución
+
+[2025-07-17 03:33:15] Nueva ejecución
+
+[2025-07-17 03:33:20] Nueva ejecución
+
+[2025-07-17 03:33:23] Nueva ejecución
+
+[2025-07-17 03:33:29] Nueva ejecución
+
+[2025-07-17 03:33:32] Nueva ejecución
+
+[2025-07-17 03:33:39] Nueva ejecución
+
+[2025-07-17 03:33:43] Nueva ejecución
+
+[2025-07-17 03:35:05] Nueva ejecución
+
+[2025-07-17 03:35:09] Nueva ejecución
+
+[2025-07-17 03:35:16] Nueva ejecución
+
+[2025-07-17 03:35:19] Nueva ejecución
+
+[2025-07-17 03:35:27] Nueva ejecución
+
+[2025-07-17 03:35:40] Nueva ejecución
+
+[2025-07-17 03:39:15] Nueva ejecución
+
+[2025-07-17 03:39:17] Nueva ejecución
+
+[2025-07-17 03:39:30] Nueva ejecución
+
+[2025-07-17 03:39:32] Nueva ejecución
+
+[2025-07-17 03:41:02] Nueva ejecución
+
+[2025-07-17 03:41:10] Nueva ejecución
+
+[2025-07-17 03:41:45] Nueva ejecución
+
+[2025-07-17 03:41:51] Nueva ejecución
+
+[2025-07-17 03:41:53] Nueva ejecución
+
+[2025-07-17 03:42:00] Nueva ejecución
+
+[2025-07-17 03:42:12] Nueva ejecución
+
+[2025-07-17 03:42:16] Nueva ejecución
+
+[2025-07-17 03:42:19] Nueva ejecución
+
+[2025-07-17 03:42:24] Nueva ejecución
+
+[2025-07-17 03:42:29] Nueva ejecución
+
+[2025-07-17 03:42:52] Nueva ejecución
+
+[2025-07-17 04:02:41] Nueva ejecución
+
+[2025-07-17 04:04:12] Nueva ejecución
+
+[2025-07-17 04:07:22] Nueva ejecución
+
+[2025-07-17 04:07:35] Nueva ejecución
+
+[2025-07-17 04:07:36] Nueva ejecución
+
+[2025-07-17 04:07:45] Nueva ejecución
+
+[2025-07-17 04:08:21] Nueva ejecución
+
+[2025-07-17 04:11:13] Nueva ejecución
+
+[2025-07-17 04:11:28] Nueva ejecución
+
+[2025-07-17 04:11:32] Nueva ejecución
+
+[2025-07-17 04:11:35] Nueva ejecución
+
+[2025-07-17 04:11:58] Nueva ejecución
+
+[2025-07-17 04:12:40] Nueva ejecución
+
+[2025-07-17 04:12:44] Nueva ejecución
+
+[2025-07-17 04:12:47] Nueva ejecución
+
+[2025-07-17 04:12:49] Nueva ejecución
+
+[2025-07-17 04:12:50] Nueva ejecución
+
+[2025-07-17 04:13:09] Nueva ejecución
+
+[2025-07-17 04:13:12] Nueva ejecución
+
+[2025-07-17 04:13:18] Nueva ejecución
+
+[2025-07-17 04:13:20] Nueva ejecución
+
+[2025-07-17 04:13:23] Nueva ejecución
+
+[2025-07-17 04:13:24] Nueva ejecución
+
+[2025-07-17 04:13:27] Nueva ejecución
+
+[2025-07-17 04:13:29] Nueva ejecución
+
+[2025-07-17 04:13:40] Nueva ejecución
+
+[2025-07-17 04:13:43] Nueva ejecución
+
+[2025-07-17 04:13:55] Nueva ejecución
+
+[2025-07-17 04:14:12] Nueva ejecución
+
+[2025-07-17 04:14:13] Nueva ejecución
+
+[2025-07-17 04:14:46] Nueva ejecución
+
+[2025-07-17 04:14:52] Nueva ejecución
+
+[2025-07-17 04:14:53] Nueva ejecución
+
+[2025-07-17 04:14:56] Nueva ejecución
+
+[2025-07-17 04:14:58] Nueva ejecución
+
+[2025-07-17 04:14:59] Nueva ejecución
+
+[2025-07-17 04:15:09] Nueva ejecución
+
+[2025-07-17 04:15:26] Nueva ejecución
+
+[2025-07-17 04:15:34] Nueva ejecución
+
+[2025-07-17 04:15:41] Nueva ejecución
+
+[2025-07-17 04:15:51] Nueva ejecución
+
+[2025-07-17 04:15:53] Nueva ejecución
+
+[2025-07-17 04:15:57] Nueva ejecución
+
+[2025-07-17 04:16:21] Nueva ejecución
+
+[2025-07-17 04:16:23] Nueva ejecución
+
+[2025-07-17 04:16:32] Nueva ejecución
+
+[2025-07-17 04:16:42] Nueva ejecución
+
+[2025-07-17 04:16:43] Nueva ejecución
+
+[2025-07-17 04:16:44] Nueva ejecución
+
+[2025-07-17 04:16:45] Nueva ejecución
+
+[2025-07-17 04:16:49] Nueva ejecución
+
+[2025-07-17 04:17:27] Nueva ejecución
+
+[2025-07-17 04:17:31] Nueva ejecución
+
+[2025-07-17 04:17:34] Nueva ejecución
+
+[2025-07-17 04:17:51] Nueva ejecución
+
+[2025-07-17 04:17:52] Nueva ejecución
+
+[2025-07-17 04:17:57] Nueva ejecución
+
+[2025-07-17 04:17:58] Nueva ejecución
+
+[2025-07-17 04:19:14] Nueva ejecución
+
+[2025-07-17 04:19:39] Nueva ejecución
+
+[2025-07-17 04:19:52] Nueva ejecución
+
+[2025-07-17 04:20:27] Nueva ejecución
+
+[2025-07-17 08:18:49] Nueva ejecución
+
+[2025-07-17 08:35:53] Nueva ejecución
+
+[2025-07-17 08:37:31] Nueva ejecución
+
+[2025-07-17 08:37:39] Nueva ejecución
+
+[2025-07-17 08:37:43] Nueva ejecución
+
+[2025-07-17 08:38:19] Nueva ejecución
+
+[2025-07-17 08:38:46] Nueva ejecución
+
+[2025-07-17 08:39:17] Nueva ejecución
+
+[2025-07-17 08:42:04] Nueva ejecución
+
+[2025-07-17 08:43:09] Nueva ejecución
+
+[2025-07-17 08:44:27] Nueva ejecución
+
+[2025-07-17 08:49:37] Nueva ejecución
+
+[2025-07-17 08:50:06] Nueva ejecución
+
+[2025-07-17 08:50:30] Nueva ejecución
+
+[2025-07-17 08:50:43] Nueva ejecución
+
+[2025-07-17 08:50:50] Nueva ejecución
+
+[2025-07-17 08:51:01] Nueva ejecución
+
+[2025-07-17 08:51:09] Nueva ejecución
+
+[2025-07-17 08:51:11] Nueva ejecución
+
+[2025-07-17 08:51:15] Nueva ejecución
+
+[2025-07-17 08:51:18] Nueva ejecución
+
+[2025-07-17 08:51:25] Nueva ejecución
+
+[2025-07-17 08:51:26] Nueva ejecución
+
+[2025-07-17 08:51:33] Nueva ejecución
+
+[2025-07-17 08:51:35] Nueva ejecución
+
+[2025-07-17 08:51:50] Nueva ejecución
+
+[2025-07-17 08:51:52] Nueva ejecución
+
+[2025-07-17 08:51:53] Nueva ejecución
+
+[2025-07-17 08:51:58] Nueva ejecución
+
+[2025-07-17 08:52:01] Nueva ejecución
+
+[2025-07-17 08:52:03] Nueva ejecución
+
+[2025-07-17 08:52:29] Nueva ejecución
+
+[2025-07-17 08:53:06] Nueva ejecución
+
+[2025-07-17 08:53:07] Nueva ejecución
+
+[2025-07-17 08:53:25] Nueva ejecución
+
+[2025-07-17 08:53:31] Nueva ejecución
+
+[2025-07-17 08:55:24] Nueva ejecución
+
+[2025-07-17 08:55:25] Nueva ejecución
+
+[2025-07-17 08:56:08] Nueva ejecución
+
+[2025-07-17 08:56:09] Nueva ejecución
+
+[2025-07-17 08:56:14] Nueva ejecución
+
+[2025-07-17 08:56:36] Nueva ejecución
+
+[2025-07-17 08:57:22] Nueva ejecución
+
+[2025-07-17 08:57:30] Nueva ejecución
+
+[2025-07-17 08:57:31] Nueva ejecución
+
+[2025-07-17 08:57:43] Nueva ejecución
+
+[2025-07-17 08:58:04] Nueva ejecución
+
+[2025-07-17 08:58:04] Nueva ejecución
+
+[2025-07-17 08:58:17] Nueva ejecución
+
+[2025-07-17 08:58:36] Nueva ejecución
+
+[2025-07-17 09:07:04] Nueva ejecución
+
+[2025-07-17 09:08:12] Nueva ejecución
+
+[2025-07-17 09:09:52] Nueva ejecución
+
+[2025-07-17 09:11:27] Nueva ejecución
+
+[2025-07-17 09:11:35] Nueva ejecución
+
+[2025-07-17 09:14:56] Nueva ejecución
+
+[2025-07-17 09:15:06] Nueva ejecución
+
+[2025-07-17 09:15:19] Nueva ejecución
+
+[2025-07-17 09:15:29] Nueva ejecución
+
+[2025-07-17 09:15:35] Nueva ejecución
+
+[2025-07-17 09:15:45] Nueva ejecución
+
+[2025-07-17 09:15:49] Nueva ejecución
+
+[2025-07-17 09:15:53] Nueva ejecución
+
+[2025-07-17 09:16:00] Nueva ejecución
+
+[2025-07-17 09:16:49] Nueva ejecución
+
+[2025-07-17 09:16:59] Nueva ejecución
+
+[2025-07-17 09:17:22] Nueva ejecución
+
+[2025-07-17 09:17:29] Nueva ejecución
+
+[2025-07-17 09:17:36] Nueva ejecución
+
+[2025-07-17 09:17:43] Nueva ejecución
+
+[2025-07-17 09:17:45] Nueva ejecución
+
+[2025-07-17 09:17:50] Nueva ejecución
+
+[2025-07-17 09:18:16] Nueva ejecución
+
+[2025-07-17 09:18:20] Nueva ejecución
+
+[2025-07-17 09:23:27] Nueva ejecución
+
+[2025-07-17 09:24:35] Nueva ejecución
+
+[2025-07-17 09:25:22] Nueva ejecución
+
+[2025-07-17 09:25:23] Nueva ejecución
+
+[2025-07-17 09:25:23] Nueva ejecución
+
+[2025-07-17 09:25:24] Nueva ejecución
+
+[2025-07-17 09:25:24] Nueva ejecución
+
+[2025-07-17 09:27:49] Nueva ejecución
+
+[2025-07-17 09:28:05] Nueva ejecución
+
+[2025-07-17 09:28:30] Nueva ejecución
+
+[2025-07-17 09:28:45] Nueva ejecución
+
+[2025-07-17 09:28:48] Nueva ejecución
+
+[2025-07-17 09:28:52] Nueva ejecución
+
+[2025-07-17 09:30:07] Nueva ejecución
+
+[2025-07-17 09:30:15] Nueva ejecución
+
+[2025-07-17 09:30:33] Nueva ejecución
+
+[2025-07-17 09:30:58] Nueva ejecución
+
+[2025-07-17 09:32:03] Nueva ejecución
+
+[2025-07-17 09:33:19] Nueva ejecución
+
+[2025-07-17 09:33:25] Nueva ejecución
+
+[2025-07-17 09:33:36] Nueva ejecución
+
+[2025-07-17 09:34:25] Nueva ejecución
+
+[2025-07-17 09:39:04] Nueva ejecución
+
+[2025-07-17 09:40:45] Nueva ejecución
+
+[2025-07-17 09:40:55] Nueva ejecución
+
+[2025-07-17 09:41:08] Nueva ejecución
+
+[2025-07-17 09:41:18] Nueva ejecución
+
+[2025-07-17 09:41:25] Nueva ejecución
+
+[2025-07-17 09:52:25] Nueva ejecución
+
+[2025-07-17 09:52:29] Nueva ejecución
+
+[2025-07-17 16:20:08] Nueva ejecución
+
+[2025-07-17 16:20:43] Nueva ejecución
+
+[2025-07-17 16:20:54] Nueva ejecución
+
+[2025-07-17 16:21:48] Nueva ejecución
+
+[2025-07-17 16:23:55] Nueva ejecución
+
+[2025-07-17 16:23:56] Nueva ejecución
+
+[2025-07-17 16:23:57] Nueva ejecución
+
+[2025-07-17 16:24:00] Nueva ejecución
+
+[2025-07-17 16:24:02] Nueva ejecución
+
+[2025-07-17 16:24:11] Nueva ejecución
+
+[2025-07-17 16:24:49] Nueva ejecución
+
+[2025-07-17 16:25:02] Nueva ejecución
+
+[2025-07-17 16:25:08] Nueva ejecución
+
+[2025-07-17 16:25:13] Nueva ejecución
+
+[2025-07-17 16:25:20] Nueva ejecución
+
+[2025-07-17 16:25:28] Nueva ejecución
+
+[2025-07-17 16:30:50] Nueva ejecución
+
+[2025-07-17 16:41:03] Nueva ejecución
+
+[2025-07-17 16:41:13] Nueva ejecución
+
+[2025-07-17 16:41:33] Nueva ejecución
+
+[2025-07-17 17:50:57] Nueva ejecución
+
+[2025-07-18 06:06:43] Nueva ejecución
+
+[2025-07-18 07:02:32] Nueva ejecución
+
+[2025-07-18 07:02:33] Nueva ejecución
+
+[2025-07-18 07:02:34] Nueva ejecución
+
+[2025-07-18 07:02:37] Nueva ejecución
+
+[2025-07-18 07:02:38] Nueva ejecución
+
+[2025-07-18 07:02:38] Nueva ejecución
+
+[2025-07-18 07:02:38] Nueva ejecución
+
+[2025-07-18 07:02:39] Nueva ejecución
+
+[2025-07-18 07:02:39] Nueva ejecución
+
+[2025-07-18 07:02:39] Nueva ejecución
+
+[2025-07-18 07:02:44] Nueva ejecución
+
+[2025-07-18 07:02:45] Nueva ejecución
+
+[2025-07-18 07:02:51] Nueva ejecución
+
+[2025-07-18 07:10:12] Nueva ejecución
+
+[2025-07-18 07:10:29] Nueva ejecución
+
+[2025-07-18 07:11:07] Nueva ejecución
+
+[2025-07-18 07:18:38] Nueva ejecución
+
+[2025-07-18 07:20:39] Nueva ejecución
+
+[2025-07-18 07:20:53] Nueva ejecución
+
+[2025-07-18 07:20:59] Nueva ejecución
+
+[2025-07-18 07:22:46] Nueva ejecución
+
+[2025-07-18 07:23:51] Nueva ejecución
+
+[2025-07-18 07:24:12] Nueva ejecución
+
+[2025-07-18 07:24:20] Nueva ejecución
+
+[2025-07-18 07:29:26] Nueva ejecución
+
+[2025-07-18 07:29:33] Nueva ejecución
+
+[2025-07-18 07:34:12] Nueva ejecución
+
+[2025-07-18 07:34:38] Nueva ejecución
+
+[2025-07-18 07:34:49] Nueva ejecución
+
+[2025-07-18 07:35:03] Nueva ejecución
+
+[2025-07-18 07:35:06] Nueva ejecución
+
+[2025-07-18 07:35:11] Nueva ejecución
+
+[2025-07-18 07:35:33] Nueva ejecución
+
+[2025-07-18 07:52:23] Nueva ejecución
+
+[2025-07-18 07:52:34] Nueva ejecución
+
+[2025-07-18 08:01:54] Nueva ejecución
+
+[2025-07-18 08:02:31] Nueva ejecución
+
+[2025-07-18 08:03:13] Nueva ejecución
+
+[2025-07-18 08:12:55] Nueva ejecución
+
+[2025-07-18 08:13:10] Nueva ejecución
+
+[2025-07-18 08:13:39] Nueva ejecución
+
+[2025-07-18 08:13:47] Nueva ejecución
+
+[2025-07-18 08:15:29] Nueva ejecución
+
+[2025-07-18 08:32:58] Nueva ejecución
+
+[2025-07-18 08:33:44] Nueva ejecución
+
+[2025-07-18 08:40:53] Nueva ejecución
+
+[2025-07-18 08:42:12] Nueva ejecución
+
+[2025-07-18 16:32:46] Nueva ejecución
+
+[2025-07-18 16:56:01] Nueva ejecución
+
+[2025-07-18 16:56:04] Nueva ejecución
+
+[2025-07-18 16:56:39] Nueva ejecución
+
+[2025-07-18 16:56:47] Nueva ejecución
+
+[2025-07-18 16:56:52] Nueva ejecución
+
+[2025-07-18 16:56:55] Nueva ejecución
+
+[2025-07-18 16:56:57] Nueva ejecución
+
+[2025-07-18 16:56:58] Nueva ejecución
+
+[2025-07-18 16:57:23] Nueva ejecución
+
+[2025-07-18 16:58:27] Nueva ejecución
+
+[2025-07-18 16:58:31] Nueva ejecución
+
+[2025-07-18 17:13:21] Nueva ejecución
+
+[2025-07-18 17:14:28] Nueva ejecución
+
+[2025-07-18 17:14:30] Nueva ejecución
+
+[2025-07-18 17:14:36] Nueva ejecución
+
+[2025-07-18 17:14:39] Nueva ejecución
+
+[2025-07-18 17:14:42] Nueva ejecución
+
+[2025-07-18 17:14:46] Nueva ejecución
+
+[2025-07-18 17:14:48] Nueva ejecución
+
+[2025-07-18 17:14:50] Nueva ejecución
+
+[2025-07-18 17:15:00] Nueva ejecución
+
+[2025-07-18 17:15:26] Nueva ejecución
+
+[2025-07-18 17:15:30] Nueva ejecución
+
+[2025-07-18 17:15:39] Nueva ejecución
+
+[2025-07-18 17:15:41] Nueva ejecución
+
+[2025-07-18 17:15:46] Nueva ejecución
+
+[2025-07-18 17:15:47] Nueva ejecución
+
+[2025-07-18 17:15:50] Nueva ejecución
+
+[2025-07-18 17:15:57] Nueva ejecución
+
+[2025-07-18 17:16:01] Nueva ejecución
